@@ -30,7 +30,7 @@ PostgreSQL 14+
 2. Setup
 ```bash
 npm install
-cp .env.example .env   # edit DB credentials, JWT_SECRET
+cp .env.example .env   # edit DB credentials, JWT\_SECRET
 npm run setup           # runs migration + seed
 npm run dev             # starts on http://localhost:4000
 ```
@@ -72,19 +72,19 @@ GET    /api/stats                  public live counts: listings, agents, cities
 GET    /api/properties/admin/pending   admin only — listings awaiting moderation
 ```
 All responses follow `{ success: true, data: {...} }` or
-`{ success: false, error: "...", details?: [...] }`.
+`{ success: false, error: "...", details?: \[...] }`.
 5. Deployment options
 Railway / Render: both support a Node web service + managed Postgres
-add-on out of the box. Point `DATABASE_URL` (or the individual `DB_*` vars)
-at the managed instance, set `JWT_SECRET` to a long random value, run
+add-on out of the box. Point `DATABASE\_URL` (or the individual `DB\_\*` vars)
+at the managed instance, set `JWT\_SECRET` to a long random value, run
 `npm run setup` once via their shell/console, then deploy.
 Fly.io: similar — `fly postgres create`, attach it to the app, set secrets,
 deploy with a basic `Dockerfile` (`node:18-slim`, `npm ci`, `npm start`).
 Your own VPS: install Postgres + Node, use `pm2` or a systemd unit to keep
 `node src/app.js` running, put nginx in front for TLS.
 Wherever you deploy, change:
-`JWT_SECRET` to a long random value (never reuse the one in this `.env`)
-`CORS_ORIGIN` to your actual frontend origin instead of `*`
+`JWT\_SECRET` to a long random value (never reuse the one in this `.env`)
+`CORS\_ORIGIN` to your actual frontend origin instead of `\*`
 Database credentials to the managed instance's connection info
 6. Security notes for production
 Rate limiting is already in place (general + stricter on `/api/auth`).
