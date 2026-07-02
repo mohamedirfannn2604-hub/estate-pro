@@ -491,7 +491,7 @@ footer{background:#0F172A;color:rgba(255,255,255,0.7);padding:4rem 2rem 2rem}
         <div>
           <div class="tag tag-amber" style="margin-bottom:1rem">🤖 Powered by AI</div>
           <h2 style="margin-bottom:1rem">Intelligent Real Estate at Your Fingertips</h2>
-          <p style="color:var(--muted);margin-bottom:1.5rem;line-height:1.7">Our AI analyses 50+ data points including price trends, locality ratings, school proximity, and future development plans to give you the smartest property recommendations.</p>
+          <p style="color:var(--muted);margin-bottom:1.5rem;line-height:1.7">These AI-powered features — price prediction, smart recommendations, and auto-generated descriptions — are planned but not yet connected to a real backend.</p>
           <div style="display:flex;flex-direction:column;gap:12px">
             <div style="display:flex;align-items:center;gap:12px"><div style="width:36px;height:36px;background:rgba(37,99,235,0.1);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.1rem">🧠</div><div><div style="font-weight:600;font-size:0.9rem">AI Price Prediction</div><div style="font-size:0.8rem;color:var(--muted)">Accurate valuations with market trend analysis</div></div></div>
             <div style="display:flex;align-items:center;gap:12px"><div style="width:36px;height:36px;background:rgba(16,185,129,0.1);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.1rem">🎯</div><div><div style="font-weight:600;font-size:0.9rem">Smart Recommendations</div><div style="font-size:0.8rem;color:var(--muted)">Personalized listings based on your preferences</div></div></div>
@@ -499,13 +499,13 @@ footer{background:#0F172A;color:rgba(255,255,255,0.7);padding:4rem 2rem 2rem}
           </div>
         </div>
         <div style="background:var(--card-bg);border:1px solid var(--border);border-radius:var(--radius-lg);padding:1.8rem">
-          <div style="font-weight:600;margin-bottom:1rem;font-size:0.95rem">🔮 AI Price Prediction</div>
+          <div style="font-weight:600;margin-bottom:1rem;font-size:0.95rem">🔮 AI Price Prediction <span class="tag" style="background:rgba(255,255,255,0.08);color:var(--muted);font-size:0.65rem;margin-left:4px">Example only — not a real prediction</span></div>
           <div style="background:linear-gradient(135deg,rgba(37,99,235,0.08),rgba(37,99,235,0.02));border:1px solid rgba(37,99,235,0.15);border-radius:var(--radius);padding:1.2rem;margin-bottom:1rem">
-            <div style="font-size:0.78rem;color:var(--muted);margin-bottom:4px">Predicted value — Bandra West, 3BHK</div>
+            <div style="font-size:0.78rem;color:var(--muted);margin-bottom:4px">Illustrative example — Bandra West, 3BHK</div>
             <div style="font-family:'Poppins',sans-serif;font-size:2rem;font-weight:800;color:var(--secondary)">₹2.85 Cr</div>
-            <div style="font-size:0.78rem;color:#10B981;margin-top:4px">↑ 12.4% expected in 12 months</div>
+            <div style="font-size:0.78rem;color:var(--muted);margin-top:4px">This feature isn't connected to a real pricing model yet</div>
           </div>
-          <canvas id="aiPriceChart" height="140"></canvas>
+          <div style="padding:2rem 1rem;text-align:center;color:var(--muted);font-size:0.85rem">This chart isn't connected to a backend yet</div>
         </div>
       </div>
     </div>
@@ -552,7 +552,7 @@ footer{background:#0F172A;color:rgba(255,255,255,0.7);padding:4rem 2rem 2rem}
     <!-- LISTINGS CONTENT -->
     <div style="flex:1;padding:1.5rem">
       <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1.5rem;flex-wrap:gap;">
-        <div><h2 style="font-size:1.3rem;font-weight:700">2,847 Properties Found</h2><p style="color:var(--muted);font-size:0.85rem">in Mumbai, Delhi, Bangalore, Hyderabad…</p></div>
+        <div><h2 id="listingsCountHeading" style="font-size:1.3rem;font-weight:700">Loading properties…</h2><p style="color:var(--muted);font-size:0.85rem">Search and filter to find your next home</p></div>
         <div style="display:flex;align-items:center;gap:10px">
           <select id="listingsSortSelect" style="width:auto;padding:8px 12px"><option>Relevance</option><option>Price: Low to High</option><option>Price: High to Low</option><option>Newest First</option><option>Most Popular</option></select>
           <div style="display:flex;gap:4px">
@@ -589,14 +589,14 @@ footer{background:#0F172A;color:rgba(255,255,255,0.7);padding:4rem 2rem 2rem}
           <div style="font-family:'Poppins',sans-serif;font-size:2.2rem;font-weight:800;color:var(--secondary)">₹2.85 Cr</div>
           <div style="color:var(--muted);font-size:0.85rem">₹18,500 / sq ft</div>
           <div style="display:flex;gap:8px;margin-top:8px;justify-content:flex-end">
-            <button class="btn btn-ghost btn-sm" onclick="showToast('Added to wishlist ❤️','❤️')">♡ Wishlist</button>
-            <button class="btn btn-ghost btn-sm" onclick="showToast('Link copied!','🔗')">🔗 Share</button>
+            <button class="btn btn-ghost btn-sm" onclick="showToast('This page isn\'t connected to the real wishlist yet','❤️')">♡ Wishlist</button>
+            <button class="btn btn-ghost btn-sm" onclick="showToast('Sharing isn\'t connected yet','🔗')">🔗 Share</button>
           </div>
         </div>
       </div>
       <!-- GALLERY -->
       <div class="prop-gallery">
-        <div class="gallery-main" style="background:linear-gradient(135deg,#1e3a5f 0%,#2563EB 50%,#7c3aed 100%);display:flex;align-items:center;justify-content:center;font-size:4rem;color:rgba(255,255,255,0.3)">🏙<div style="position:absolute;bottom:1rem;left:1rem"><button class="btn" style="background:rgba(0,0,0,0.5);color:#fff;border:1px solid rgba(255,255,255,0.2);backdrop-filter:blur(8px)" onclick="showToast('360° Tour launching...','🥽')">🥽 360° Virtual Tour</button></div></div>
+        <div class="gallery-main" style="background:linear-gradient(135deg,#1e3a5f 0%,#2563EB 50%,#7c3aed 100%);display:flex;align-items:center;justify-content:center;font-size:4rem;color:rgba(255,255,255,0.3)">🏙<div style="position:absolute;bottom:1rem;left:1rem"><button class="btn" style="background:rgba(0,0,0,0.5);color:#fff;border:1px solid rgba(255,255,255,0.2);backdrop-filter:blur(8px)" onclick="showToast('Virtual tours aren\'t connected yet','🥽')">🥽 360° Virtual Tour</button></div></div>
         <div class="gallery-thumb" style="background:linear-gradient(135deg,#2563EB,#1d4ed8);display:flex;align-items:center;justify-content:center;font-size:2rem;color:rgba(255,255,255,0.3)">🛋</div>
         <div class="gallery-thumb" style="background:linear-gradient(135deg,#7c3aed,#6d28d9);display:flex;align-items:center;justify-content:center;font-size:2rem;color:rgba(255,255,255,0.3)">🛁</div>
       </div>
@@ -626,8 +626,8 @@ footer{background:#0F172A;color:rgba(255,255,255,0.7);padding:4rem 2rem 2rem}
           </div>
           <!-- PRICE HISTORY -->
           <div class="chart-card" style="margin-bottom:1.5rem">
-            <h3>Price History & Trends</h3>
-            <canvas id="priceHistoryChart" height="120"></canvas>
+            <h3>Price History & Trends <span class="tag" style="background:rgba(255,255,255,0.08);color:var(--muted);font-size:0.7rem;margin-left:6px">Demo data</span></h3>
+            <div style="padding:2.5rem 1rem;text-align:center;color:var(--muted);font-size:0.85rem">This chart isn't connected to a backend yet</div>
           </div>
           <!-- MAP -->
           <div class="chart-card">
@@ -653,8 +653,8 @@ footer{background:#0F172A;color:rgba(255,255,255,0.7);padding:4rem 2rem 2rem}
             <div class="agent-name">Rohit Kapoor</div>
             <div class="agent-title">Senior Property Consultant</div>
             <div class="agent-stats"><div class="agent-stat"><strong>284</strong><span>Deals</span></div><div class="agent-stat"><strong>8yr</strong><span>Experience</span></div></div>
-            <button class="btn btn-primary" style="width:100%" onclick="showToast('Connecting to agent...','📞')">📞 Call Agent</button>
-            <button class="btn btn-ghost" style="width:100%" onclick="showToast('Chat opened!','💬')">💬 Chat Now</button>
+            <button class="btn btn-primary" style="width:100%" onclick="showToast('Calling isn\'t connected yet','📞')">📞 Call Agent</button>
+            <button class="btn btn-ghost" style="width:100%" onclick="showToast('Chat isn\'t connected yet','💬')">💬 Chat Now</button>
           </div>
           <!-- EMI CALC -->
           <div class="calc-section" style="margin-bottom:1.2rem">
@@ -669,9 +669,9 @@ footer{background:#0F172A;color:rgba(255,255,255,0.7);padding:4rem 2rem 2rem}
           <div class="chart-card">
             <h3 style="font-size:0.95rem;margin-bottom:1rem">📄 Documents Available</h3>
             <div style="display:flex;flex-direction:column;gap:8px">
-              <div style="display:flex;align-items:center;justify-content:space-between;padding:8px;background:rgba(37,99,235,0.05);border-radius:8px"><span style="font-size:0.82rem">Floor Plan.pdf</span><button class="btn btn-ghost btn-sm" onclick="showToast('Downloading...','📥')">⬇ Download</button></div>
-              <div style="display:flex;align-items:center;justify-content:space-between;padding:8px;background:rgba(16,185,129,0.05);border-radius:8px"><span style="font-size:0.82rem">RERA Certificate.pdf</span><button class="btn btn-ghost btn-sm" onclick="showToast('Downloading...','📥')">⬇ Download</button></div>
-              <div style="display:flex;align-items:center;justify-content:space-between;padding:8px;background:rgba(245,158,11,0.05);border-radius:8px"><span style="font-size:0.82rem">Brochure.pdf</span><button class="btn btn-ghost btn-sm" onclick="showToast('Downloading...','📥')">⬇ Download</button></div>
+              <div style="display:flex;align-items:center;justify-content:space-between;padding:8px;background:rgba(37,99,235,0.05);border-radius:8px"><span style="font-size:0.82rem">Floor Plan.pdf</span><button class="btn btn-ghost btn-sm" onclick="showToast('Document downloads aren\'t connected yet','📥')">⬇ Download</button></div>
+              <div style="display:flex;align-items:center;justify-content:space-between;padding:8px;background:rgba(16,185,129,0.05);border-radius:8px"><span style="font-size:0.82rem">RERA Certificate.pdf</span><button class="btn btn-ghost btn-sm" onclick="showToast('Document downloads aren\'t connected yet','📥')">⬇ Download</button></div>
+              <div style="display:flex;align-items:center;justify-content:space-between;padding:8px;background:rgba(245,158,11,0.05);border-radius:8px"><span style="font-size:0.82rem">Brochure.pdf</span><button class="btn btn-ghost btn-sm" onclick="showToast('Document downloads aren\'t connected yet','📥')">⬇ Download</button></div>
             </div>
           </div>
         </div>
@@ -688,23 +688,17 @@ footer{background:#0F172A;color:rgba(255,255,255,0.7);padding:4rem 2rem 2rem}
       <select style="width:auto"><option>All Types</option><option>Apartment</option><option>Villa</option><option>Plot</option></select>
       <select style="width:auto"><option>Any BHK</option><option>2 BHK</option><option>3 BHK</option></select>
       <select style="width:auto"><option>Budget</option><option>Under ₹50L</option><option>₹50L-₹1Cr</option><option>Above ₹1Cr</option></select>
-      <button class="btn btn-primary btn-sm" onclick="showToast('Map updated','🗺')">Search</button>
+      <button class="btn btn-primary btn-sm" onclick="showToast('Map search isn\'t connected to a backend yet','🗺')">Search</button>
       <button class="btn btn-ghost btn-sm" onclick="showPage('listings')">☰ List View</button>
     </div>
     <div style="flex:1;position:relative;overflow:hidden">
       <div class="map-box" style="width:100%;height:100%;border-radius:0;border:none">
         <div style="position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(37,99,235,0.03) 0,rgba(37,99,235,0.03) 1px,transparent 0,transparent 40px),repeating-linear-gradient(90deg,rgba(37,99,235,0.03) 0,rgba(37,99,235,0.03) 1px,transparent 0,transparent 40px)"></div>
-        <div class="map-pin" style="left:30%;top:40%"><div class="map-pin-label">₹1.2 Cr — 3BHK</div></div>
-        <div class="map-pin" style="left:50%;top:55%"><div class="map-pin-label">₹85L — 2BHK</div></div>
-        <div class="map-pin" style="left:68%;top:35%"><div class="map-pin-label">₹2.85 Cr — 3BHK</div></div>
-        <div class="map-pin" style="left:42%;top:28%;background:#F59E0B"><div class="map-pin-label">₹45L — Plot</div></div>
-        <div class="map-pin" style="left:75%;top:60%;background:#10B981"><div class="map-pin-label">₹35K/mo — Rent</div></div>
-        <div class="map-pin" style="left:20%;top:65%;background:#7c3aed"><div class="map-pin-label">₹1.8 Cr — Villa</div></div>
         <div style="position:absolute;top:1rem;right:1rem;display:flex;flex-direction:column;gap:6px">
-          <button class="btn btn-primary btn-sm" onclick="showToast('Zooming in','🔍')">+</button>
-          <button class="btn btn-ghost btn-sm" onclick="showToast('Zooming out','🔍')">−</button>
+          <button class="btn btn-primary btn-sm" onclick="showToast('Map isn\'t connected to a real maps provider yet','🔍')">+</button>
+          <button class="btn btn-ghost btn-sm" onclick="showToast('Map isn\'t connected to a real maps provider yet','🔍')">−</button>
         </div>
-        <div style="position:absolute;bottom:1rem;left:50%;transform:translateX(-50%);background:var(--card-bg);border:1px solid var(--border);border-radius:var(--radius);padding:8px 16px;font-size:0.82rem;color:var(--muted)">📍 124 properties in this area</div>
+        <div style="position:absolute;bottom:1rem;left:50%;transform:translateX(-50%);background:var(--card-bg);border:1px solid var(--border);border-radius:var(--radius);padding:8px 16px;font-size:0.82rem;color:var(--muted)">📍 Map isn't connected to a real maps provider yet</div>
       </div>
     </div>
   </div>
@@ -738,7 +732,7 @@ footer{background:#0F172A;color:rgba(255,255,255,0.7);padding:4rem 2rem 2rem}
     </div>
     <div class="dash-content">
       <div class="dash-header">
-        <h1>Welcome back, Priya! 👋</h1>
+        <h1 id="buyerWelcomeHeading">Welcome back! 👋</h1>
         <p>Here's your property search activity</p>
       </div>
       <!-- AI RECOMMENDATIONS -->
@@ -789,7 +783,7 @@ footer{background:#0F172A;color:rgba(255,255,255,0.7);padding:4rem 2rem 2rem}
       <div class="sidebar-section">
         <div class="sidebar-label">Properties</div>
         <div class="sidebar-item" onclick="showPage('listings')"><span class="icon">🏘</span> Browse Listings</div>
-        <div class="sidebar-item" onclick="showToast('My Listings','📋')"><span class="icon">📋</span> My Listings</div>
+        <div class="sidebar-item" onclick="showToast('My Listings view isn\'t connected yet \u2014 use Browse Listings','📋')"><span class="icon">📋</span> My Listings</div>
         <div class="sidebar-item" onclick="showAgentPanel('featured')"><span class="icon">⭐</span> Featured</div>
       </div>
       <div class="sidebar-section">
@@ -817,8 +811,8 @@ footer{background:#0F172A;color:rgba(255,255,255,0.7);padding:4rem 2rem 2rem}
       </div>
       <!-- CHARTS ROW -->
       <div class="grid-2" style="margin-bottom:2rem">
-        <div class="chart-card"><h3>Lead Pipeline</h3><canvas id="agentLeadsChart" height="160"></canvas></div>
-        <div class="chart-card"><h3>Monthly Performance</h3><canvas id="agentPerfChart" height="160"></canvas></div>
+        <div class="chart-card"><h3>Lead Pipeline <span class="tag" style="background:rgba(255,255,255,0.08);color:var(--muted);font-size:0.7rem;margin-left:6px">Demo data</span></h3><div style="padding:2.5rem 1rem;text-align:center;color:var(--muted);font-size:0.85rem">This chart isn't connected to a backend yet</div></div>
+        <div class="chart-card"><h3>Monthly Performance <span class="tag" style="background:rgba(255,255,255,0.08);color:var(--muted);font-size:0.7rem;margin-left:6px">Demo data</span></h3><div style="padding:2.5rem 1rem;text-align:center;color:var(--muted);font-size:0.85rem">This chart isn't connected to a backend yet</div></div>
       </div>
       <!-- KANBAN LEADS -->
       <div style="margin-bottom:2rem">
@@ -851,7 +845,7 @@ footer{background:#0F172A;color:rgba(255,255,255,0.7);padding:4rem 2rem 2rem}
         <div class="sidebar-label">Properties</div>
         <div class="sidebar-item active"><span class="icon">📊</span> Dashboard</div>
         <div class="sidebar-item" onclick="showPage('addproperty')"><span class="icon">➕</span> Add Property</div>
-        <div class="sidebar-item" onclick="showToast('My properties','🏘')"><span class="icon">🏘</span> My Properties</div>
+        <div class="sidebar-item" onclick="showToast('Your properties are listed below on this Dashboard','🏘')"><span class="icon">🏘</span> My Properties</div>
         <div class="sidebar-item" onclick="showBuilderPanel('projects')"><span class="icon">🏗</span> Projects</div>
       </div>
       <div class="sidebar-section">
@@ -873,8 +867,8 @@ footer{background:#0F172A;color:rgba(255,255,255,0.7);padding:4rem 2rem 2rem}
         <div class="stat-card"><div class="stat-icon stat-icon-purple">💰</div><div class="value">—</div><div class="label">Sales Value</div><div class="change" style="color:var(--muted)">Demo data — not tracked yet</div></div>
       </div>
       <div class="grid-2" style="margin-bottom:2rem">
-        <div class="chart-card"><h3>Lead Funnel <span class="tag" style="background:rgba(255,255,255,0.08);color:var(--muted);font-size:0.7rem;margin-left:6px">Demo data</span></h3><canvas id="builderFunnelChart" height="160"></canvas></div>
-        <div class="chart-card"><h3>Revenue by Project <span class="tag" style="background:rgba(255,255,255,0.08);color:var(--muted);font-size:0.7rem;margin-left:6px">Demo data</span></h3><canvas id="builderRevChart" height="160"></canvas></div>
+        <div class="chart-card"><h3>Lead Funnel <span class="tag" style="background:rgba(255,255,255,0.08);color:var(--muted);font-size:0.7rem;margin-left:6px">Demo data</span></h3><div style="padding:2.5rem 1rem;text-align:center;color:var(--muted);font-size:0.85rem">This chart isn't connected to a backend yet</div></div>
+        <div class="chart-card"><h3>Revenue by Project <span class="tag" style="background:rgba(255,255,255,0.08);color:var(--muted);font-size:0.7rem;margin-left:6px">Demo data</span></h3><div style="padding:2.5rem 1rem;text-align:center;color:var(--muted);font-size:0.85rem">This chart isn't connected to a backend yet</div></div>
       </div>
       <div class="table-card">
         <div class="table-head"><h3>My Properties</h3><button class="btn btn-primary btn-sm" onclick="showPage('addproperty')">+ Add New</button></div>
@@ -940,20 +934,20 @@ footer{background:#0F172A;color:rgba(255,255,255,0.7);padding:4rem 2rem 2rem}
               <div class="form-group"><label class="form-label">Pincode</label><input type="text" placeholder="400050"></div>
             </div>
             <div class="form-group"><label class="form-label">Full Address</label><textarea placeholder="Building name, street, landmark..." style="min-height:80px"></textarea></div>
-            <div class="map-box" style="margin-top:1rem"><div style="text-align:center;color:var(--muted)"><div style="font-size:2rem;margin-bottom:8px">📍</div><div>Click to pin property location on map</div><button class="btn btn-primary btn-sm" style="margin-top:10px" onclick="showToast('Location pinned!','📍')">Pin Location</button></div></div>
+            <div class="map-box" style="margin-top:1rem"><div style="text-align:center;color:var(--muted)"><div style="font-size:2rem;margin-bottom:8px">📍</div><div>Click to pin property location on map</div><button class="btn btn-primary btn-sm" style="margin-top:10px" onclick="showToast('Map pinning isn\'t connected yet','📍')">Pin Location</button></div></div>
           </div>
           <!-- STEP 3 -->
           <div id="stepContent3" style="display:none">
             <h3 style="margin-bottom:1.5rem">Property Media</h3>
-            <div style="border:2px dashed var(--border);border-radius:var(--radius-lg);padding:2.5rem;text-align:center;margin-bottom:1.5rem;cursor:pointer;transition:all var(--transition)" onclick="showToast('File picker opened','🖼')" onmouseover="this.style.borderColor='#2563EB'" onmouseout="this.style.borderColor=''">
+            <div style="border:2px dashed var(--border);border-radius:var(--radius-lg);padding:2.5rem;text-align:center;margin-bottom:1.5rem;cursor:pointer;transition:all var(--transition)" onclick="showToast('Photo upload isn\'t connected yet','🖼')" onmouseover="this.style.borderColor='#2563EB'" onmouseout="this.style.borderColor=''">
               <div style="font-size:2.5rem;margin-bottom:10px">🖼</div>
               <div style="font-weight:600;margin-bottom:4px">Upload Property Photos</div>
               <div style="font-size:0.85rem;color:var(--muted)">Drag & drop or click to upload. Max 20 images. JPG, PNG, WEBP. Recommended: 1920×1080px</div>
               <button class="btn btn-primary btn-sm" style="margin-top:12px">Choose Files</button>
             </div>
             <div class="grid-2">
-              <div style="border:2px dashed var(--border);border-radius:var(--radius);padding:1.5rem;text-align:center;cursor:pointer" onclick="showToast('Video upload','📹')"><div style="font-size:2rem">🎬</div><div style="font-weight:600;margin-top:8px">Upload Video</div><div style="font-size:0.8rem;color:var(--muted);margin-top:4px">MP4, MOV. Max 2GB</div></div>
-              <div style="border:2px dashed var(--border);border-radius:var(--radius);padding:1.5rem;text-align:center;cursor:pointer" onclick="showToast('360 tour upload','🥽')"><div style="font-size:2rem">🥽</div><div style="font-weight:600;margin-top:8px">360° Virtual Tour</div><div style="font-size:0.8rem;color:var(--muted);margin-top:4px">Matterport / Tour URL</div></div>
+              <div style="border:2px dashed var(--border);border-radius:var(--radius);padding:1.5rem;text-align:center;cursor:pointer" onclick="showToast('Video upload isn\'t connected yet','📹')"><div style="font-size:2rem">🎬</div><div style="font-weight:600;margin-top:8px">Upload Video</div><div style="font-size:0.8rem;color:var(--muted);margin-top:4px">MP4, MOV. Max 2GB</div></div>
+              <div style="border:2px dashed var(--border);border-radius:var(--radius);padding:1.5rem;text-align:center;cursor:pointer" onclick="showToast('Virtual tour upload isn\'t connected yet','🥽')"><div style="font-size:2rem">🥽</div><div style="font-weight:600;margin-top:8px">360° Virtual Tour</div><div style="font-size:0.8rem;color:var(--muted);margin-top:4px">Matterport / Tour URL</div></div>
             </div>
             <div style="margin-top:1.5rem">
               <div class="form-group"><label class="form-label">Upload Floor Plan</label><input type="text" placeholder="Or paste floor plan URL"></div>
@@ -987,16 +981,9 @@ footer{background:#0F172A;color:rgba(255,255,255,0.7);padding:4rem 2rem 2rem}
           <!-- STEP 6 -->
           <div id="stepContent6" style="display:none">
             <h3 style="margin-bottom:1.5rem">Review & Publish</h3>
-            <div class="alert alert-success" style="margin-bottom:1.5rem">✅ All required information has been filled. Your property is ready to go live!</div>
-            <div class="chart-card" style="margin-bottom:1.5rem">
-              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1.2rem"><h3>Listing Preview</h3><span class="tag tag-green">Complete</span></div>
-              <div style="display:flex;gap:1.5rem;flex-wrap:wrap">
-                <div style="background:linear-gradient(135deg,#1e3a5f,#2563EB);width:180px;height:120px;border-radius:var(--radius);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:2.5rem">🏙</div>
-                <div><div style="font-weight:700;font-size:1.1rem;margin-bottom:4px">Your Property Title</div><div style="color:var(--muted);font-size:0.85rem;margin-bottom:8px">📍 Bandra West, Mumbai</div><div style="font-family:'Poppins',sans-serif;font-size:1.4rem;font-weight:700;color:var(--secondary)">₹2.85 Cr</div><div style="display:flex;gap:8px;margin-top:8px"><span class="tag tag-blue">3 BHK</span><span class="tag tag-green">Ready</span><span class="tag tag-amber">Premium</span></div></div>
-              </div>
-            </div>
+            <div class="alert alert-info" style="margin-bottom:1.5rem">⚠️ This 6-step form isn't connected to a backend yet — submitting won't actually create a listing.</div>
             <div class="form-group"><label class="form-label">Subscription Plan for Enhanced Visibility</label><select><option>Basic (Free) — Standard listing</option><option>Pro (₹4,999/mo) — Featured + AI boost</option><option>Enterprise (₹14,999/mo) — Top of search + Marketing</option></select></div>
-            <button class="btn btn-primary btn-lg" style="width:100%" onclick="showToast('🎉 Property submitted for review!','🚀')">🚀 Submit for Review</button>
+            <button class="btn btn-primary btn-lg" style="width:100%" onclick="showToast('This form isn\'t connected to a backend yet \u2014 nothing was submitted','\ud83d\udea7')">🚀 Submit for Review</button>
           </div>
           <!-- NAVIGATION -->
           <div style="display:flex;justify-content:space-between;margin-top:2rem;padding-top:1.5rem;border-top:1px solid var(--border)">
@@ -1099,19 +1086,18 @@ footer{background:#0F172A;color:rgba(255,255,255,0.7);padding:4rem 2rem 2rem}
           <div class="stat-card"><div class="stat-icon stat-icon-purple">🤝</div><div class="value" id="statAgentsAdmin">—</div><div class="label">Verified Agents</div></div>
         </div>
         <div class="grid-2" style="margin-bottom:2rem">
-          <div class="chart-card"><h3>Revenue Trend <span class="tag" style="background:rgba(255,255,255,0.08);color:var(--muted);font-size:0.7rem;margin-left:6px">Demo data</span></h3><canvas id="adminRevenueChart" height="160"></canvas></div>
-          <div class="chart-card"><h3>User Growth <span class="tag" style="background:rgba(255,255,255,0.08);color:var(--muted);font-size:0.7rem;margin-left:6px">Demo data</span></h3><canvas id="adminUserChart" height="160"></canvas></div>
+          <div class="chart-card"><h3>Revenue Trend <span class="tag" style="background:rgba(255,255,255,0.08);color:var(--muted);font-size:0.7rem;margin-left:6px">Demo data</span></h3><div style="padding:2.5rem 1rem;text-align:center;color:var(--muted);font-size:0.85rem">This chart isn't connected to a backend yet</div></div>
+          <div class="chart-card"><h3>User Growth <span class="tag" style="background:rgba(255,255,255,0.08);color:var(--muted);font-size:0.7rem;margin-left:6px">Demo data</span></h3><div style="padding:2.5rem 1rem;text-align:center;color:var(--muted);font-size:0.85rem">This chart isn't connected to a backend yet</div></div>
         </div>
         <div class="grid-2" style="margin-bottom:2rem">
-          <div class="chart-card"><h3>Listings by City</h3><canvas id="adminCityChart" height="160"></canvas></div>
-          <div class="chart-card"><h3>Subscription Split <span class="tag" style="background:rgba(255,255,255,0.08);color:var(--muted);font-size:0.7rem;margin-left:6px">Demo data</span></h3><canvas id="adminSubChart" height="160"></canvas></div>
+          <div class="chart-card"><h3>Listings by City</h3><div style="padding:2.5rem 1rem;text-align:center;color:var(--muted);font-size:0.85rem">This chart isn't connected to a backend yet</div></div>
+          <div class="chart-card"><h3>Subscription Split <span class="tag" style="background:rgba(255,255,255,0.08);color:var(--muted);font-size:0.7rem;margin-left:6px">Demo data</span></h3><div style="padding:2.5rem 1rem;text-align:center;color:var(--muted);font-size:0.85rem">This chart isn't connected to a backend yet</div></div>
         </div>
         <div class="table-card">
           <div class="table-head"><h3>⏳ Pending Moderation <span class="tag tag-amber" id="pendingModerationBadge" style="margin-left:8px;display:none">0</span></h3><button class="btn btn-ghost btn-sm" onclick="showAdminPanel('moderation')">View All →</button></div>
-          <table><thead><tr><th>Property</th><th>Builder</th><th>Submitted</th><th>Type</th><th>Actions</th></tr></thead>
-          <tbody>
-            <tr><td><div style="font-weight:600">Prestige Grand Villa</div><div style="font-size:0.75rem;color:var(--muted)">Lonavala, MH</div></td><td>Prestige Group</td><td>2 hr ago</td><td><span class="tag tag-purple">Villa</span></td><td><div style="display:flex;gap:6px"><button class="btn btn-primary btn-sm" onclick="approveProperty(this,'Prestige Grand Villa')">Approve</button><button class="btn btn-ghost btn-sm" style="color:var(--danger)" onclick="rejectProperty(this)">Reject</button></div></td></tr>
-            <tr><td><div style="font-weight:600">DLF Park Residences</div><div style="font-size:0.75rem;color:var(--muted)">Gurgaon, HR</div></td><td>DLF Limited</td><td>5 hr ago</td><td><span class="tag tag-blue">Apartment</span></td><td><div style="display:flex;gap:6px"><button class="btn btn-primary btn-sm" onclick="approveProperty(this,'DLF Park Residences')">Approve</button><button class="btn btn-ghost btn-sm" style="color:var(--danger)" onclick="rejectProperty(this)">Reject</button></div></td></tr>
+          <table><thead><tr><th>Property</th><th>City</th><th>Submitted</th><th>Type</th><th>Actions</th></tr></thead>
+          <tbody id="overviewModerationBody">
+            <tr><td colspan="5" style="text-align:center;padding:1.5rem;color:var(--muted)">Loading pending listings…</td></tr>
           </tbody></table>
         </div>
       </div>
@@ -1122,7 +1108,7 @@ footer{background:#0F172A;color:rgba(255,255,255,0.7);padding:4rem 2rem 2rem}
       <div class="admin-panel" id="ap-users">
         <div class="dash-header" style="display:flex;justify-content:space-between;align-items:flex-start">
           <div><h1>User Management</h1><p style="color:var(--muted)">Demo data shown below — not yet connected to live user records</p></div>
-          <button class="btn btn-primary" onclick="showToast('CSV export started','📥')">⬇ Export CSV</button>
+          <button class="btn btn-primary" onclick="showToast('CSV export isn\'t connected to a backend yet','📥')">⬇ Export CSV</button>
         </div>
         <div class="admin-filter-bar">
           <input type="text" placeholder="🔍 Search by name, email, username…" oninput="filterAdminUsers(this.value)">
@@ -1135,7 +1121,7 @@ footer{background:#0F172A;color:rgba(255,255,255,0.7);padding:4rem 2rem 2rem}
             <tbody id="usersTableBody"></tbody>
           </table>
           <div style="display:flex;justify-content:space-between;align-items:center;padding:1rem 1.2rem;border-top:1px solid var(--border)">
-            <span style="font-size:0.82rem;color:var(--muted)" id="usersPagLabel">Showing 1–10 of 10 (demo data)</span>
+            <span style="font-size:0.82rem;color:var(--muted)" id="usersPagLabel">No users to display</span>
             <div style="display:flex;gap:6px">
               <button class="btn btn-ghost btn-sm">← Prev</button>
               <button class="btn btn-primary btn-sm">1</button>
@@ -1151,11 +1137,11 @@ footer{background:#0F172A;color:rgba(255,255,255,0.7);padding:4rem 2rem 2rem}
            PANEL 3 · AGENT APPROVALS
            ════════════════════════════════════════════════════════════════ -->
       <div class="admin-panel" id="ap-agents">
-        <div class="dash-header"><h1>Agent Approvals</h1><p style="color:var(--muted)">Demo applications shown below — review and verify agent credentials</p></div>
+        <div class="dash-header"><h1>Agent Approvals</h1><p style="color:var(--muted)">This workflow isn't connected to a backend yet — agents are auto-active on registration</p></div>
         <div class="stat-grid" style="grid-template-columns:repeat(3,1fr)">
-          <div class="stat-card"><div class="stat-icon stat-icon-amber">⏳</div><div class="value">8</div><div class="label">Pending Review <span style="font-weight:400;color:var(--muted)">(demo)</span></div></div>
+          <div class="stat-card"><div class="stat-icon stat-icon-amber">⏳</div><div class="value">—</div><div class="label">Pending Review</div><div class="change" style="color:var(--muted)">Demo data — not tracked yet</div></div>
           <div class="stat-card"><div class="stat-icon stat-icon-green">✅</div><div class="value" id="statAgentsApprovalsPanel">—</div><div class="label">Approved Agents</div></div>
-          <div class="stat-card"><div class="stat-icon stat-icon-blue">❌</div><div class="value">42</div><div class="label">Rejected (30d) <span style="font-weight:400;color:var(--muted)">(demo)</span></div></div>
+          <div class="stat-card"><div class="stat-icon stat-icon-blue">❌</div><div class="value">—</div><div class="label">Rejected (30d)</div><div class="change" style="color:var(--muted)">Demo data — not tracked yet</div></div>
         </div>
         <div class="table-card">
           <div class="table-head"><h3>Pending Agent Applications</h3>
@@ -1172,7 +1158,7 @@ footer{background:#0F172A;color:rgba(255,255,255,0.7);padding:4rem 2rem 2rem}
            PANEL 4 · PROPERTY MODERATION
            ════════════════════════════════════════════════════════════════ -->
       <div class="admin-panel" id="ap-moderation">
-        <div class="dash-header"><h1>Property Moderation</h1><p>24 listings awaiting review · Average review time: 4.2 hours</p></div>
+        <div class="dash-header"><h1>Property Moderation</h1><p id="moderationHeaderCount">Loading pending listings…</p></div>
         <div class="admin-filter-bar">
           <input type="text" placeholder="🔍 Search property…">
           <select><option>All Types</option><option>Apartment</option><option>Villa</option><option>Plot</option><option>Commercial</option></select>
@@ -1180,13 +1166,13 @@ footer{background:#0F172A;color:rgba(255,255,255,0.7);padding:4rem 2rem 2rem}
           <select><option>Pending</option><option>Approved</option><option>Rejected</option></select>
         </div>
         <div class="table-card">
-          <div class="table-head"><h3>Pending Listings <span class="tag tag-amber" style="margin-left:6px">24</span></h3>
+          <div class="table-head"><h3>Pending Listings <span class="tag tag-amber" id="moderationCountBadge" style="margin-left:6px;display:none">0</span></h3>
             <div style="display:flex;gap:8px">
-              <button class="btn btn-primary btn-sm" onclick="showToast('Bulk approve','✅')">✓ Approve Selected</button>
-              <button class="btn btn-ghost btn-sm" style="color:var(--danger)" onclick="showToast('Bulk reject','❌')">✗ Reject Selected</button>
+              <button class="btn btn-primary btn-sm" onclick="showToast('Bulk actions aren\'t implemented yet — use Approve/Reject per row','✅')">✓ Approve Selected</button>
+              <button class="btn btn-ghost btn-sm" style="color:var(--danger)" onclick="showToast('Bulk actions aren\'t implemented yet — use Approve/Reject per row','❌')">✗ Reject Selected</button>
             </div>
           </div>
-          <table id="moderationTable"><thead><tr><th><input type="checkbox"></th><th>Property</th><th>Builder</th><th>Price</th><th>Submitted</th><th>Type</th><th>Preview</th><th>Actions</th></tr></thead>
+          <table id="moderationTable"><thead><tr><th><input type="checkbox"></th><th>Property</th><th>Location</th><th>Price</th><th>Submitted</th><th>Type</th><th>Preview</th><th>Actions</th></tr></thead>
           <tbody id="moderationBody"></tbody></table>
         </div>
       </div>
@@ -1197,20 +1183,18 @@ footer{background:#0F172A;color:rgba(255,255,255,0.7);padding:4rem 2rem 2rem}
       <div class="admin-panel" id="ap-subs">
         <div class="dash-header"><h1>Subscriptions</h1><p style="color:var(--muted)">Demo data — billing is not yet connected to a real payment provider</p></div>
         <div class="stat-grid">
-          <div class="stat-card"><div class="stat-icon stat-icon-blue">🆓</div><div class="value">7,980</div><div class="label">Basic (Free)</div><div class="change up">62% of users</div></div>
-          <div class="stat-card"><div class="stat-icon stat-icon-green">⭐</div><div class="value">3,742</div><div class="label">Pro Plan</div><div class="change up">↑ 124 this month</div></div>
-          <div class="stat-card"><div class="stat-icon stat-icon-amber">🏆</div><div class="value">1,125</div><div class="label">Enterprise</div><div class="change up">↑ 18 this month</div></div>
-          <div class="stat-card"><div class="stat-icon stat-icon-purple">💰</div><div class="value">₹28.4L</div><div class="label">MRR</div><div class="change up">↑ 18.4%</div></div>
+          <div class="stat-card"><div class="stat-icon stat-icon-blue">🆓</div><div class="value">—</div><div class="label">Basic (Free)</div><div class="change" style="color:var(--muted)">Demo data — not tracked yet</div></div>
+          <div class="stat-card"><div class="stat-icon stat-icon-green">⭐</div><div class="value">—</div><div class="label">Pro Plan</div><div class="change" style="color:var(--muted)">Demo data — not tracked yet</div></div>
+          <div class="stat-card"><div class="stat-icon stat-icon-amber">🏆</div><div class="value">—</div><div class="label">Enterprise</div><div class="change" style="color:var(--muted)">Demo data — not tracked yet</div></div>
+          <div class="stat-card"><div class="stat-icon stat-icon-purple">💰</div><div class="value">—</div><div class="label">MRR</div><div class="change" style="color:var(--muted)">Demo data — not tracked yet</div></div>
         </div>
         <div class="grid-2" style="margin-bottom:2rem">
-          <div class="chart-card"><h3>Plan Distribution Over Time</h3><canvas id="subsGrowthChart" height="180"></canvas></div>
+          <div class="chart-card"><h3>Plan Distribution Over Time <span class="tag" style="background:rgba(255,255,255,0.08);color:var(--muted);font-size:0.7rem;margin-left:6px">Demo data</span></h3><div style="padding:2.5rem 1rem;text-align:center;color:var(--muted);font-size:0.85rem">This chart isn't connected to a backend yet</div></div>
           <div class="chart-card" style="padding:1.5rem">
             <h3 style="margin-bottom:1.2rem">Active Coupons</h3>
             <div style="display:flex;flex-direction:column;gap:10px">
-              <div style="display:flex;justify-content:space-between;align-items:center;padding:10px;background:rgba(37,99,235,0.05);border-radius:var(--radius);border:1px solid rgba(37,99,235,0.12)"><div><div style="font-weight:700;font-size:0.9rem;font-family:monospace">LAUNCH50</div><div style="font-size:0.75rem;color:var(--muted)">50% off Pro · Expires Jul 31</div></div><span class="tag tag-green">Active · 284 uses</span></div>
-              <div style="display:flex;justify-content:space-between;align-items:center;padding:10px;background:rgba(37,99,235,0.05);border-radius:var(--radius);border:1px solid rgba(37,99,235,0.12)"><div><div style="font-weight:700;font-size:0.9rem;font-family:monospace">BUILD30</div><div style="font-size:0.75rem;color:var(--muted)">30% off Enterprise · No expiry</div></div><span class="tag tag-green">Active · 42 uses</span></div>
-              <div style="display:flex;justify-content:space-between;align-items:center;padding:10px;background:rgba(248,250,252,0.5);border-radius:var(--radius);border:1px solid var(--border)"><div><div style="font-weight:700;font-size:0.9rem;font-family:monospace">SUMMER20</div><div style="font-size:0.75rem;color:var(--muted)">20% off all plans · Expired</div></div><span class="tag" style="background:var(--border);color:var(--muted)">Expired</span></div>
-              <button class="btn btn-primary btn-sm" style="width:fit-content" onclick="showToast('Coupon created','🎟')">+ Create Coupon</button>
+              <div style="text-align:center;padding:1rem;color:var(--muted);font-size:0.85rem">No coupons yet — coupon management isn't connected to a backend yet</div>
+              <button class="btn btn-primary btn-sm" style="width:fit-content" onclick="showToast('Coupon management isn\\'t connected to a backend yet','🎟')">+ Create Coupon</button>
             </div>
           </div>
         </div>
@@ -1227,17 +1211,17 @@ footer{background:#0F172A;color:rgba(255,255,255,0.7);padding:4rem 2rem 2rem}
       <div class="admin-panel" id="ap-payments">
         <div class="dash-header"><h1>Payments & Revenue</h1><p style="color:var(--muted)">Demo data — payment processing is not yet connected</p></div>
         <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem;margin-bottom:2rem">
-          <div class="rev-card"><div class="rv">₹28.4L</div><div class="rl">This Month</div><div class="rc" style="color:#10B981">↑ 18.4%</div></div>
-          <div class="rev-card"><div class="rv">₹2.84Cr</div><div class="rl">This Year</div><div class="rc" style="color:#10B981">↑ 42.1%</div></div>
-          <div class="rev-card"><div class="rv">₹1,840</div><div class="rl">Avg Transaction</div><div class="rc" style="color:#10B981">↑ 6.2%</div></div>
-          <div class="rev-card"><div class="rv">99.1%</div><div class="rl">Success Rate</div><div class="rc" style="color:#10B981">↑ 0.3%</div></div>
+          <div class="rev-card"><div class="rv">—</div><div class="rl">This Month</div><div class="rc" style="color:var(--muted)">Demo data</div></div>
+          <div class="rev-card"><div class="rv">—</div><div class="rl">This Year</div><div class="rc" style="color:var(--muted)">Demo data</div></div>
+          <div class="rev-card"><div class="rv">—</div><div class="rl">Avg Transaction</div><div class="rc" style="color:var(--muted)">Demo data</div></div>
+          <div class="rev-card"><div class="rv">—</div><div class="rl">Success Rate</div><div class="rc" style="color:var(--muted)">Demo data</div></div>
         </div>
-        <div class="chart-card" style="margin-bottom:2rem"><h3>Revenue by Month</h3><canvas id="paymentsChart" height="120"></canvas></div>
+        <div class="chart-card" style="margin-bottom:2rem"><h3>Revenue by Month <span class="tag" style="background:rgba(255,255,255,0.08);color:var(--muted);font-size:0.7rem;margin-left:6px">Demo data</span></h3><div style="padding:2.5rem 1rem;text-align:center;color:var(--muted);font-size:0.85rem">This chart isn't connected to a backend yet</div></div>
         <div class="table-card">
           <div class="table-head"><h3>Recent Transactions</h3>
             <div style="display:flex;gap:8px">
               <select style="padding:6px 10px;border:1px solid var(--border);border-radius:8px;font-size:0.82rem;outline:none"><option>All Methods</option><option>UPI</option><option>Card</option><option>Net Banking</option></select>
-              <button class="btn btn-ghost btn-sm" onclick="showToast('Exporting transactions','📥')">⬇ Export</button>
+              <button class="btn btn-ghost btn-sm" onclick="showToast('Export isn\'t connected to a backend yet','📥')">⬇ Export</button>
             </div>
           </div>
           <table><thead><tr><th>Txn ID</th><th>User</th><th>Plan</th><th>Amount</th><th>Method</th><th>Date</th><th>Status</th></tr></thead>
@@ -1249,21 +1233,21 @@ footer{background:#0F172A;color:rgba(255,255,255,0.7);padding:4rem 2rem 2rem}
            PANEL 7 · ANALYTICS
            ════════════════════════════════════════════════════════════════ -->
       <div class="admin-panel" id="ap-analytics">
-        <div class="dash-header"><h1>Analytics</h1><p>Platform performance · Last 30 days</p></div>
+        <div class="dash-header"><h1>Analytics</h1><p style="color:var(--muted)">Demo data — platform analytics aren't connected to a backend yet</p></div>
         <div class="stat-grid">
-          <div class="stat-card"><div class="stat-icon stat-icon-blue">👁</div><div class="value">4.2M</div><div class="label">Page Views</div><div class="change up">↑ 22%</div></div>
-          <div class="stat-card"><div class="stat-icon stat-icon-green">🔍</div><div class="value">842K</div><div class="label">Property Searches</div><div class="change up">↑ 18%</div></div>
-          <div class="stat-card"><div class="stat-icon stat-icon-amber">📩</div><div class="value">28,400</div><div class="label">Inquiries Sent</div><div class="change up">↑ 31%</div></div>
-          <div class="stat-card"><div class="stat-icon stat-icon-purple">🤖</div><div class="value">184K</div><div class="label">AI Chat Sessions</div><div class="change up">↑ 64%</div></div>
+          <div class="stat-card"><div class="stat-icon stat-icon-blue">👁</div><div class="value">—</div><div class="label">Page Views</div><div class="change" style="color:var(--muted)">Demo data — not tracked yet</div></div>
+          <div class="stat-card"><div class="stat-icon stat-icon-green">🔍</div><div class="value">—</div><div class="label">Property Searches</div><div class="change" style="color:var(--muted)">Demo data — not tracked yet</div></div>
+          <div class="stat-card"><div class="stat-icon stat-icon-amber">📩</div><div class="value">—</div><div class="label">Inquiries Sent</div><div class="change" style="color:var(--muted)">Demo data — not tracked yet</div></div>
+          <div class="stat-card"><div class="stat-icon stat-icon-purple">🤖</div><div class="value">—</div><div class="label">AI Chat Sessions</div><div class="change" style="color:var(--muted)">Demo data — not tracked yet</div></div>
         </div>
         <div class="grid-2" style="margin-bottom:2rem">
-          <div class="chart-card"><h3>Daily Active Users</h3><canvas id="dauChart" height="180"></canvas></div>
-          <div class="chart-card"><h3>Searches by City</h3><canvas id="searchCityChart" height="180"></canvas></div>
+          <div class="chart-card"><h3>Daily Active Users <span class="tag" style="background:rgba(255,255,255,0.08);color:var(--muted);font-size:0.7rem;margin-left:6px">Demo data</span></h3><div style="padding:2.5rem 1rem;text-align:center;color:var(--muted);font-size:0.85rem">This chart isn't connected to a backend yet</div></div>
+          <div class="chart-card"><h3>Searches by City <span class="tag" style="background:rgba(255,255,255,0.08);color:var(--muted);font-size:0.7rem;margin-left:6px">Demo data</span></h3><div style="padding:2.5rem 1rem;text-align:center;color:var(--muted);font-size:0.85rem">This chart isn't connected to a backend yet</div></div>
         </div>
         <div class="grid-2">
-          <div class="chart-card"><h3>Device Breakdown</h3><canvas id="deviceChart" height="180"></canvas></div>
-          <div class="chart-card"><h3>Conversion Funnel</h3>
-            <div style="margin-top:1rem;display:flex;flex-direction:column;gap:8px" id="funnelBars"></div>
+          <div class="chart-card"><h3>Device Breakdown <span class="tag" style="background:rgba(255,255,255,0.08);color:var(--muted);font-size:0.7rem;margin-left:6px">Demo data</span></h3><div style="padding:2.5rem 1rem;text-align:center;color:var(--muted);font-size:0.85rem">This chart isn't connected to a backend yet</div></div>
+          <div class="chart-card"><h3>Conversion Funnel <span class="tag" style="background:rgba(255,255,255,0.08);color:var(--muted);font-size:0.7rem;margin-left:6px">Demo data</span></h3>
+            <div style="padding:2.5rem 1rem;text-align:center;color:var(--muted);font-size:0.85rem">This chart isn't connected to a backend yet</div>
           </div>
         </div>
       </div>
@@ -1274,22 +1258,22 @@ footer{background:#0F172A;color:rgba(255,255,255,0.7);padding:4rem 2rem 2rem}
       <div class="admin-panel" id="ap-reports">
         <div class="dash-header"><h1>Reports</h1><p>Scheduled and on-demand reports</p></div>
         <div class="grid-3" style="margin-bottom:2rem">
-          <div class="chart-card" style="cursor:pointer;transition:all 0.2s" onmouseover="this.style.borderColor='var(--secondary)'" onmouseout="this.style.borderColor=''" onclick="showToast('Generating Revenue Report…','📊')">
+          <div class="chart-card" style="cursor:pointer;transition:all 0.2s" onmouseover="this.style.borderColor='var(--secondary)'" onmouseout="this.style.borderColor=''" onclick="showToast('Report generation isn\'t connected to a backend yet','📊')">
             <div style="font-size:2rem;margin-bottom:10px">📊</div><h3 style="font-size:1rem;margin-bottom:6px">Revenue Report</h3><p style="font-size:0.82rem;color:var(--muted)">Monthly revenue breakdown by plan and city</p><div style="margin-top:12px"><span class="tag tag-blue">Monthly</span></div>
           </div>
-          <div class="chart-card" style="cursor:pointer;transition:all 0.2s" onmouseover="this.style.borderColor='var(--secondary)'" onmouseout="this.style.borderColor=''" onclick="showToast('Generating User Report…','👥')">
+          <div class="chart-card" style="cursor:pointer;transition:all 0.2s" onmouseover="this.style.borderColor='var(--secondary)'" onmouseout="this.style.borderColor=''" onclick="showToast('Report generation isn\'t connected to a backend yet','👥')">
             <div style="font-size:2rem;margin-bottom:10px">👥</div><h3 style="font-size:1rem;margin-bottom:6px">User Growth Report</h3><p style="font-size:0.82rem;color:var(--muted)">Signups, churn, and retention by cohort</p><div style="margin-top:12px"><span class="tag tag-green">Weekly</span></div>
           </div>
-          <div class="chart-card" style="cursor:pointer;transition:all 0.2s" onmouseover="this.style.borderColor='var(--secondary)'" onmouseout="this.style.borderColor=''" onclick="showToast('Generating Listing Report…','🏘')">
+          <div class="chart-card" style="cursor:pointer;transition:all 0.2s" onmouseover="this.style.borderColor='var(--secondary)'" onmouseout="this.style.borderColor=''" onclick="showToast('Report generation isn\'t connected to a backend yet','🏘')">
             <div style="font-size:2rem;margin-bottom:10px">🏘</div><h3 style="font-size:1rem;margin-bottom:6px">Listing Activity</h3><p style="font-size:0.82rem;color:var(--muted)">New listings, approvals, and rejections</p><div style="margin-top:12px"><span class="tag tag-amber">Daily</span></div>
           </div>
-          <div class="chart-card" style="cursor:pointer;transition:all 0.2s" onmouseover="this.style.borderColor='var(--secondary)'" onmouseout="this.style.borderColor=''" onclick="showToast('Generating Agent Report…','🤝')">
+          <div class="chart-card" style="cursor:pointer;transition:all 0.2s" onmouseover="this.style.borderColor='var(--secondary)'" onmouseout="this.style.borderColor=''" onclick="showToast('Report generation isn\'t connected to a backend yet','🤝')">
             <div style="font-size:2rem;margin-bottom:10px">🤝</div><h3 style="font-size:1rem;margin-bottom:6px">Agent Performance</h3><p style="font-size:0.82rem;color:var(--muted)">Deals closed, response rate, ratings</p><div style="margin-top:12px"><span class="tag tag-purple">Monthly</span></div>
           </div>
-          <div class="chart-card" style="cursor:pointer;transition:all 0.2s" onmouseover="this.style.borderColor='var(--secondary)'" onmouseout="this.style.borderColor=''" onclick="showToast('Generating AI Report…','🤖')">
+          <div class="chart-card" style="cursor:pointer;transition:all 0.2s" onmouseover="this.style.borderColor='var(--secondary)'" onmouseout="this.style.borderColor=''" onclick="showToast('Report generation isn\'t connected to a backend yet','🤖')">
             <div style="font-size:2rem;margin-bottom:10px">🤖</div><h3 style="font-size:1rem;margin-bottom:6px">AI Usage Report</h3><p style="font-size:0.82rem;color:var(--muted)">Chat sessions, recommendations, predictions</p><div style="margin-top:12px"><span class="tag tag-blue">Weekly</span></div>
           </div>
-          <div class="chart-card" style="cursor:pointer;transition:all 0.2s" onmouseover="this.style.borderColor='var(--secondary)'" onmouseout="this.style.borderColor=''" onclick="showToast('Generating RERA Report…','🏛')">
+          <div class="chart-card" style="cursor:pointer;transition:all 0.2s" onmouseover="this.style.borderColor='var(--secondary)'" onmouseout="this.style.borderColor=''" onclick="showToast('Report generation isn\'t connected to a backend yet','🏛')">
             <div style="font-size:2rem;margin-bottom:10px">🏛</div><h3 style="font-size:1rem;margin-bottom:6px">RERA Compliance</h3><p style="font-size:0.82rem;color:var(--muted)">Compliance status across all listings</p><div style="margin-top:12px"><span class="tag tag-green">Quarterly</span></div>
           </div>
         </div>
@@ -1297,9 +1281,7 @@ footer{background:#0F172A;color:rgba(255,255,255,0.7);padding:4rem 2rem 2rem}
           <div class="table-head"><h3>📋 Generated Reports</h3></div>
           <table><thead><tr><th>Report</th><th>Generated</th><th>Period</th><th>Size</th><th>Download</th></tr></thead>
           <tbody>
-            <tr><td style="font-weight:600">Revenue Report — June 2025</td><td>Jun 20, 2025</td><td>Jun 1–20</td><td>284 KB</td><td><button class="btn btn-ghost btn-sm" onclick="showToast('Downloading…','📥')">⬇ PDF</button></td></tr>
-            <tr><td style="font-weight:600">User Growth — Week 24</td><td>Jun 16, 2025</td><td>Jun 10–16</td><td>142 KB</td><td><button class="btn btn-ghost btn-sm" onclick="showToast('Downloading…','📥')">⬇ PDF</button></td></tr>
-            <tr><td style="font-weight:600">Agent Performance — May 2025</td><td>Jun 1, 2025</td><td>May 2025</td><td>520 KB</td><td><button class="btn btn-ghost btn-sm" onclick="showToast('Downloading…','📥')">⬇ PDF</button></td></tr>
+            <tr><td colspan="5" style="text-align:center;padding:1.5rem;color:var(--muted)">No reports generated yet — report generation isn't connected to a backend yet</td></tr>
           </tbody></table>
         </div>
       </div>
@@ -1310,10 +1292,10 @@ footer{background:#0F172A;color:rgba(255,255,255,0.7);padding:4rem 2rem 2rem}
       <div class="admin-panel" id="ap-support">
         <div class="dash-header"><h1>Support Tickets</h1><p style="color:var(--muted)">Demo data — support tickets aren't connected to a backend yet</p></div>
         <div class="stat-grid" style="grid-template-columns:repeat(4,1fr)">
-          <div class="stat-card"><div class="stat-icon stat-icon-blue">🎫</div><div class="value">17</div><div class="label">Open</div></div>
-          <div class="stat-card"><div class="stat-icon stat-icon-amber">⏳</div><div class="value">8</div><div class="label">In Progress</div></div>
-          <div class="stat-card"><div class="stat-icon stat-icon-green">✅</div><div class="value">284</div><div class="label">Resolved (30d)</div></div>
-          <div class="stat-card"><div class="stat-icon stat-icon-purple">⭐</div><div class="value">4.7</div><div class="label">CSAT Score</div></div>
+          <div class="stat-card"><div class="stat-icon stat-icon-blue">🎫</div><div class="value">—</div><div class="label">Open</div><div class="change" style="color:var(--muted)">Demo data — not tracked yet</div></div>
+          <div class="stat-card"><div class="stat-icon stat-icon-amber">⏳</div><div class="value">—</div><div class="label">In Progress</div><div class="change" style="color:var(--muted)">Demo data — not tracked yet</div></div>
+          <div class="stat-card"><div class="stat-icon stat-icon-green">✅</div><div class="value">—</div><div class="label">Resolved (30d)</div><div class="change" style="color:var(--muted)">Demo data — not tracked yet</div></div>
+          <div class="stat-card"><div class="stat-icon stat-icon-purple">⭐</div><div class="value">—</div><div class="label">CSAT Score</div><div class="change" style="color:var(--muted)">Demo data — not tracked yet</div></div>
         </div>
         <div class="admin-filter-bar">
           <input type="text" placeholder="🔍 Search tickets…">
@@ -1322,7 +1304,7 @@ footer{background:#0F172A;color:rgba(255,255,255,0.7);padding:4rem 2rem 2rem}
           <select><option>All Categories</option><option>Payment</option><option>Property</option><option>Agent</option><option>KYC</option><option>Technical</option></select>
         </div>
         <div class="table-card">
-          <div class="table-head"><h3>Open Tickets</h3><button class="btn btn-primary btn-sm" onclick="showToast('Ticket assigned','🎫')">+ Assign Selected</button></div>
+          <div class="table-head"><h3>Open Tickets</h3><button class="btn btn-primary btn-sm" onclick="showToast('Ticket assignment isn\'t connected to a backend yet','🎫')">+ Assign Selected</button></div>
           <table><thead><tr><th>Ticket #</th><th>User</th><th>Subject</th><th>Category</th><th>Priority</th><th>Assignee</th><th>Created</th><th>Actions</th></tr></thead>
           <tbody id="supportTableBody"></tbody></table>
         </div>
@@ -1332,16 +1314,16 @@ footer{background:#0F172A;color:rgba(255,255,255,0.7);padding:4rem 2rem 2rem}
            PANEL 10 · AUDIT LOGS
            ════════════════════════════════════════════════════════════════ -->
       <div class="admin-panel" id="ap-audit">
-        <div class="dash-header"><h1>Audit Logs</h1><p>Complete record of all admin and system actions</p></div>
+        <div class="dash-header"><h1>Audit Logs</h1><p style="color:var(--muted)">Demo data — audit logging isn't connected to a backend yet</p></div>
         <div class="admin-filter-bar">
           <input type="text" placeholder="🔍 Search by user, action, entity…">
           <select><option>All Actions</option><option>Login</option><option>Logout</option><option>Create</option><option>Update</option><option>Delete</option><option>Approve</option><option>Reject</option><option>Export</option></select>
           <select><option>All Roles</option><option>Super Admin</option><option>Admin</option><option>Agent</option></select>
           <input type="date" style="padding:8px 12px;border:1px solid var(--border);border-radius:var(--radius);font-size:0.85rem;color:var(--primary);background:var(--card-bg);outline:none">
-          <button class="btn btn-ghost btn-sm" onclick="showToast('Logs exported','📥')">⬇ Export</button>
+          <button class="btn btn-ghost btn-sm" onclick="showToast('Export isn\'t connected to a backend yet','📥')">⬇ Export</button>
         </div>
         <div class="table-card">
-          <div class="table-head"><h3>Activity Log</h3><span style="font-size:0.82rem;color:var(--muted)" id="auditCount">Showing latest 50 of 8,420 entries</span></div>
+          <div class="table-head"><h3>Activity Log</h3><span style="font-size:0.82rem;color:var(--muted)" id="auditCount">No entries — not tracked yet</span></div>
           <table><thead><tr><th>Timestamp</th><th>Actor</th><th>Role</th><th>Action</th><th>Entity</th><th>Details</th><th>IP</th></tr></thead>
           <tbody id="auditTableBody"></tbody></table>
         </div>
@@ -1351,11 +1333,11 @@ footer{background:#0F172A;color:rgba(255,255,255,0.7);padding:4rem 2rem 2rem}
            PANEL 11 · PLATFORM SETTINGS
            ════════════════════════════════════════════════════════════════ -->
       <div class="admin-panel" id="ap-settings">
-        <div class="dash-header"><h1>Platform Settings</h1><p>Global configuration for EstateAI Pro</p></div>
+        <div class="dash-header"><h1>Platform Settings</h1><p>Most settings below aren't connected to a backend yet — changing them has no real effect</p></div>
         <div class="grid-2">
           <!-- General -->
           <div class="chart-card" style="margin-bottom:1.5rem">
-            <h3 style="margin-bottom:1.2rem">🌐 General</h3>
+            <h3 style="margin-bottom:1.2rem">🌐 General <span class="tag" style="background:rgba(255,255,255,0.08);color:var(--muted);font-size:0.7rem;margin-left:6px">Not connected</span></h3>
             <div class="setting-row"><div><div class="setting-label">Platform Name</div><div class="setting-desc">Displayed in emails and browser tab</div></div><input type="text" value="EstateAI Pro" style="width:160px;padding:7px 10px;border:1px solid var(--border);border-radius:8px;font-size:0.85rem;color:var(--primary);background:var(--card-bg);outline:none"></div>
             <div class="setting-row"><div><div class="setting-label">Default Currency</div></div><select style="padding:7px 10px;border:1px solid var(--border);border-radius:8px;font-size:0.85rem;color:var(--primary);background:var(--card-bg);outline:none"><option>INR (₹)</option><option>USD ($)</option><option>AED (د.إ)</option></select></div>
             <div class="setting-row"><div><div class="setting-label">Listings per Page</div></div><select style="padding:7px 10px;border:1px solid var(--border);border-radius:8px;font-size:0.85rem;color:var(--primary);background:var(--card-bg);outline:none"><option>20</option><option>40</option><option>60</option></select></div>
@@ -1363,34 +1345,34 @@ footer{background:#0F172A;color:rgba(255,255,255,0.7);padding:4rem 2rem 2rem}
           </div>
           <!-- Auth -->
           <div class="chart-card" style="margin-bottom:1.5rem">
-            <h3 style="margin-bottom:1.2rem">🔐 Auth & Security</h3>
-            <div class="setting-row"><div><div class="setting-label">Require Email Verification</div></div><div class="toggle on" onclick="this.classList.toggle('on')"></div></div>
-            <div class="setting-row"><div><div class="setting-label">KYC for Agents</div><div class="setting-desc">Agents must complete KYC before listing</div></div><div class="toggle on" onclick="this.classList.toggle('on')"></div></div>
-            <div class="setting-row"><div><div class="setting-label">Two-Factor Auth (Admins)</div></div><div class="toggle on" onclick="this.classList.toggle('on')"></div></div>
-            <div class="setting-row"><div><div class="setting-label">Max Login Attempts</div></div><input type="number" value="5" style="width:70px;padding:7px 10px;border:1px solid var(--border);border-radius:8px;font-size:0.85rem;color:var(--primary);background:var(--card-bg);outline:none"></div>
-            <div class="setting-row"><div><div class="setting-label">Session Timeout (hours)</div></div><input type="number" value="24" style="width:70px;padding:7px 10px;border:1px solid var(--border);border-radius:8px;font-size:0.85rem;color:var(--primary);background:var(--card-bg);outline:none"></div>
+            <h3 style="margin-bottom:1.2rem">🔐 Auth & Security <span class="tag tag-green" style="font-size:0.7rem;margin-left:6px">Partially real</span></h3>
+            <div class="setting-row"><div><div class="setting-label">Email Verification</div><div class="setting-desc">Not enforced — accounts are active immediately on registration</div></div><div class="toggle" onclick="this.classList.toggle('on')"></div></div>
+            <div class="setting-row"><div><div class="setting-label">KYC for Agents</div><div class="setting-desc">Not enforced — agents can list immediately on registration</div></div><div class="toggle" onclick="this.classList.toggle('on')"></div></div>
+            <div class="setting-row"><div><div class="setting-label">Two-Factor Auth (Admins)</div><div class="setting-desc">Not implemented</div></div><div class="toggle" onclick="this.classList.toggle('on')"></div></div>
+            <div class="setting-row"><div><div class="setting-label">Max Login Attempts</div><div class="setting-desc">Login is rate-limited (30 attempts / 15 min), but this field doesn't control it</div></div><input type="number" value="5" style="width:70px;padding:7px 10px;border:1px solid var(--border);border-radius:8px;font-size:0.85rem;color:var(--primary);background:var(--card-bg);outline:none"></div>
+            <div class="setting-row"><div><div class="setting-label">Session Timeout (hours)</div><div class="setting-desc">JWTs actually expire after 7 days; this field doesn't control it</div></div><input type="number" value="24" style="width:70px;padding:7px 10px;border:1px solid var(--border);border-radius:8px;font-size:0.85rem;color:var(--primary);background:var(--card-bg);outline:none"></div>
           </div>
           <!-- Notifications -->
           <div class="chart-card" style="margin-bottom:1.5rem">
-            <h3 style="margin-bottom:1.2rem">🔔 Notifications</h3>
-            <div class="setting-row"><div><div class="setting-label">Email Notifications</div></div><div class="toggle on" onclick="this.classList.toggle('on')"></div></div>
-            <div class="setting-row"><div><div class="setting-label">WhatsApp Integration</div></div><div class="toggle on" onclick="this.classList.toggle('on')"></div></div>
-            <div class="setting-row"><div><div class="setting-label">Push Notifications</div></div><div class="toggle on" onclick="this.classList.toggle('on')"></div></div>
-            <div class="setting-row"><div><div class="setting-label">Admin Alert Email</div></div><input type="email" value="alerts@estateaipro.com" style="width:200px;padding:7px 10px;border:1px solid var(--border);border-radius:8px;font-size:0.82rem;color:var(--primary);background:var(--card-bg);outline:none"></div>
+            <h3 style="margin-bottom:1.2rem">🔔 Notifications <span class="tag" style="background:rgba(255,255,255,0.08);color:var(--muted);font-size:0.7rem;margin-left:6px">Not connected</span></h3>
+            <div class="setting-row"><div><div class="setting-label">Email Notifications</div></div><div class="toggle" onclick="this.classList.toggle('on')"></div></div>
+            <div class="setting-row"><div><div class="setting-label">WhatsApp Integration</div></div><div class="toggle" onclick="this.classList.toggle('on')"></div></div>
+            <div class="setting-row"><div><div class="setting-label">Push Notifications</div></div><div class="toggle" onclick="this.classList.toggle('on')"></div></div>
+            <div class="setting-row"><div><div class="setting-label">Admin Alert Email</div></div><input type="email" placeholder="not configured" style="width:200px;padding:7px 10px;border:1px solid var(--border);border-radius:8px;font-size:0.82rem;color:var(--primary);background:var(--card-bg);outline:none"></div>
           </div>
           <!-- AI -->
           <div class="chart-card" style="margin-bottom:1.5rem">
-            <h3 style="margin-bottom:1.2rem">🤖 AI Features</h3>
-            <div class="setting-row"><div><div class="setting-label">AI Recommendations</div></div><div class="toggle on" onclick="this.classList.toggle('on')"></div></div>
-            <div class="setting-row"><div><div class="setting-label">AI Price Prediction</div></div><div class="toggle on" onclick="this.classList.toggle('on')"></div></div>
-            <div class="setting-row"><div><div class="setting-label">AI Description Generator</div></div><div class="toggle on" onclick="this.classList.toggle('on')"></div></div>
-            <div class="setting-row"><div><div class="setting-label">AI Chat Assistant</div></div><div class="toggle on" onclick="this.classList.toggle('on')"></div></div>
-            <div class="setting-row"><div><div class="setting-label">AI Model</div></div><select style="padding:7px 10px;border:1px solid var(--border);border-radius:8px;font-size:0.82rem;color:var(--primary);background:var(--card-bg);outline:none"><option>claude-sonnet-4-6</option><option>claude-opus-4-6</option></select></div>
+            <h3 style="margin-bottom:1.2rem">🤖 AI Features <span class="tag" style="background:rgba(255,255,255,0.08);color:var(--muted);font-size:0.7rem;margin-left:6px">Not connected</span></h3>
+            <div class="setting-row"><div><div class="setting-label">AI Recommendations</div></div><div class="toggle" onclick="this.classList.toggle('on')"></div></div>
+            <div class="setting-row"><div><div class="setting-label">AI Price Prediction</div></div><div class="toggle" onclick="this.classList.toggle('on')"></div></div>
+            <div class="setting-row"><div><div class="setting-label">AI Description Generator</div></div><div class="toggle" onclick="this.classList.toggle('on')"></div></div>
+            <div class="setting-row"><div><div class="setting-label">AI Chat Assistant</div></div><div class="toggle" onclick="this.classList.toggle('on')"></div></div>
+            <div class="setting-row"><div><div class="setting-label">AI Model</div><div class="setting-desc">No AI model is actually wired in</div></div><select style="padding:7px 10px;border:1px solid var(--border);border-radius:8px;font-size:0.82rem;color:var(--primary);background:var(--card-bg);outline:none"><option>None configured</option></select></div>
           </div>
         </div>
         <div style="display:flex;gap:10px;justify-content:flex-end;margin-top:0.5rem">
           <button class="btn btn-ghost" onclick="showToast('Changes discarded','🔄')">Discard</button>
-          <button class="btn btn-primary" onclick="showToast('Settings saved successfully ✅','⚙️')">Save All Settings</button>
+          <button class="btn btn-primary" onclick="showToast('Settings aren\'t connected to a backend yet — nothing was saved','⚙️')">Save All Settings</button>
         </div>
       </div>
 
@@ -1454,21 +1436,16 @@ function initAdminPanelContent(id) {
   }
 }
 
-// ── Approve / reject helpers ──────────────────────────────────────────────
-function approveProperty(btn, name) {
-  const row = btn.closest('tr');
-  row.style.opacity = '0.4';
-  row.querySelector('td:last-child').innerHTML = '<span class="tag tag-green">✓ Approved</span>';
-  showToast(`${name} approved ✅`, '✅');
-}
-function rejectProperty(btn) {
-  const row = btn.closest('tr');
-  row.style.opacity = '0.4';
-  row.querySelector('td:last-child').innerHTML = '<span class="tag tag-red">✗ Rejected</span>';
-  showToast('Property rejected', '❌');
-}
+// approveProperty/rejectProperty were a fake fade-the-row-and-toast pair
+// with no real backend call; removed in favor of moderateProperty() (see
+// the backend integration script), which calls the real PUT endpoint.
 function bulkApproveAgents() {
-  document.querySelectorAll('#agentApprovalsBody tr').forEach(row => {
+  const rows = document.querySelectorAll('#agentApprovalsBody tr');
+  if (rows.length === 0) {
+    showToast("Agent approval isn't connected to a backend yet", '⚠️');
+    return;
+  }
+  rows.forEach(row => {
     row.style.opacity = '0.4';
     row.querySelector('td:last-child').innerHTML = '<span class="tag tag-green">✓ Approved</span>';
   });
@@ -1558,8 +1535,8 @@ function renderAgentApprovals() {
       <td style="font-size:0.82rem;color:var(--muted)">${a.applied}</td>
       <td><span class="tag ${a.docs==='Complete'?'tag-green':'tag-amber'}">${a.docs}</span></td>
       <td><div style="display:flex;gap:4px">
-        <button class="btn btn-primary btn-sm" onclick="approveProperty(this,'${a.name}')">Approve</button>
-        <button class="btn btn-ghost btn-sm" style="color:var(--danger)" onclick="rejectProperty(this)">Reject</button>
+        <button class="btn btn-primary btn-sm" onclick="showToast('Agent approval isn\'t connected to a backend yet','✅')">Approve</button>
+        <button class="btn btn-ghost btn-sm" style="color:var(--danger)" onclick="showToast('Agent approval isn\'t connected to a backend yet','❌')">Reject</button>
       </div></td>
     </tr>`).join('');
 }
@@ -1569,11 +1546,15 @@ function renderAgentApprovals() {
 // admin approve/reject them via the real PUT /api/properties/:id endpoint.
 async function renderModeration() {
   const tbody = document.getElementById('moderationBody');
+  const headerCount = document.getElementById('moderationHeaderCount');
+  const countBadge = document.getElementById('moderationCountBadge');
   tbody.innerHTML = `<tr><td colspan="8" style="text-align:center;padding:1.5rem;color:var(--muted)">Loading pending listings…</td></tr>`;
   try {
     const token = sessionStorage.getItem('eai_token');
     if (!token) {
       tbody.innerHTML = `<tr><td colspan="8" style="text-align:center;padding:1.5rem;color:var(--muted)">Sign in as an admin to view pending listings</td></tr>`;
+      if (headerCount) headerCount.textContent = 'Sign in as an admin to view pending listings';
+      if (countBadge) countBadge.style.display = 'none';
       return;
     }
     const pendingRes = await fetch(`${window.ESTATEAI_API_BASE || 'http://localhost:4000/api'}/properties/admin/pending`, {
@@ -1581,6 +1562,16 @@ async function renderModeration() {
     });
     const json = await pendingRes.json();
     const pending = (json?.data?.properties || []).filter(p => p.status === 'pending');
+
+    if (headerCount) {
+      headerCount.textContent = pending.length === 1
+        ? '1 listing awaiting review'
+        : `${pending.length} listings awaiting review`;
+    }
+    if (countBadge) {
+      countBadge.textContent = pending.length;
+      countBadge.style.display = pending.length > 0 ? 'inline-block' : 'none';
+    }
 
     if (pending.length === 0) {
       tbody.innerHTML = `<tr><td colspan="8" style="text-align:center;padding:1.5rem;color:var(--muted)">No listings pending moderation</td></tr>`;
@@ -1625,6 +1616,14 @@ async function moderateProperty(propertyId, newStatus, btn) {
     row.querySelector('td:last-child').innerHTML = newStatus === 'approved'
       ? '<span class="tag tag-green">✓ Approved</span>'
       : '<span class="tag tag-red">✗ Rejected</span>';
+    const countBadge = document.getElementById('moderationCountBadge');
+    const headerCount = document.getElementById('moderationHeaderCount');
+    if (countBadge) {
+      const newCount = Math.max(0, parseInt(countBadge.textContent, 10) - 1);
+      countBadge.textContent = newCount;
+      countBadge.style.display = newCount > 0 ? 'inline-block' : 'none';
+      if (headerCount) headerCount.textContent = newCount === 1 ? '1 listing awaiting review' : `${newCount} listings awaiting review`;
+    }
     showToast(newStatus === 'approved' ? 'Listing approved ✅' : 'Listing rejected', newStatus === 'approved' ? '✅' : '❌');
   } catch (err) {
     showToast(`Couldn't update listing: ${err.message}`, '⚠️');
@@ -1645,7 +1644,7 @@ function renderSubsPanel() {
       <td style="font-size:0.82rem;color:var(--muted)">${s.renews}</td>
       <td style="font-weight:600">${s.amount}</td>
       <td><span class="tag ${s.status==='Active'?'tag-green':'tag-blue'}">${s.status}</span></td>
-      <td><button class="btn btn-ghost btn-sm" onclick="showToast('Managing subscription','💳')">Manage</button></td>
+      <td><button class="btn btn-ghost btn-sm" onclick="showToast('Subscription management isn\'t connected yet','💳')">Manage</button></td>
     </tr>`).join('');
   // Chart
   destroyChart('subsGrowth');
@@ -1685,41 +1684,11 @@ function renderPaymentsPanel() {
 }
 
 // ── Render: Analytics ─────────────────────────────────────────────────────
-function renderAnalyticsPanel() {
-  destroyChart('dau');
-  const d = document.getElementById('dauChart');
-  if (d) chartInstances['dau'] = new Chart(d, {
-    type:'line', data:{labels:['Jun 1','Jun 5','Jun 10','Jun 15','Jun 20'],datasets:[{
-      data:[28400,31200,29800,34100,38200],borderColor:'#2563EB',backgroundColor:'rgba(37,99,235,0.08)',fill:true,tension:0.4,pointRadius:4
-    }]},options:{...chartDefaults,scales:{x:{grid:{display:false},ticks:{color:tc()}},y:{ticks:{color:tc()}}}}
-  });
-  destroyChart('searchCity');
-  const sc = document.getElementById('searchCityChart');
-  if (sc) chartInstances['searchCity'] = new Chart(sc, {
-    type:'bar', data:{labels:['Mumbai','Bangalore','Delhi','Hyderabad','Pune','Chennai'],datasets:[{
-      data:[284000,241000,198000,142000,98000,74000],backgroundColor:['#2563EB','#10B981','#F59E0B','#7c3aed','#EF4444','#06b6d4'],borderRadius:6
-    }]},options:{...chartDefaults,scales:{x:{grid:{display:false},ticks:{color:tc()}},y:{ticks:{color:tc()}}}}
-  });
-  destroyChart('device');
-  const dv = document.getElementById('deviceChart');
-  if (dv) chartInstances['device'] = new Chart(dv, {
-    type:'doughnut', data:{labels:['Mobile','Desktop','Tablet'],datasets:[{data:[62,31,7],backgroundColor:['#2563EB','#10B981','#F59E0B'],borderWidth:0}]},
-    options:{responsive:true,maintainAspectRatio:true,plugins:{legend:{position:'bottom',labels:{color:tc(),boxWidth:12}}}}
-  });
-  // Funnel
-  const steps = [
-    {label:'Page Views',val:4200000,pct:100,color:'#2563EB'},
-    {label:'Property Views',val:840000,pct:20,color:'#7c3aed'},
-    {label:'Inquiries Sent',val:84000,pct:2,color:'#F59E0B'},
-    {label:'Site Visits',val:16800,pct:0.4,color:'#10B981'},
-    {label:'Deals Closed',val:2100,pct:0.05,color:'#EF4444'},
-  ];
-  document.getElementById('funnelBars').innerHTML = steps.map(s => `
-    <div>
-      <div style="display:flex;justify-content:space-between;font-size:0.78rem;margin-bottom:4px"><span style="font-weight:500">${s.label}</span><span style="color:var(--muted)">${s.val.toLocaleString('en-IN')} (${s.pct}%)</span></div>
-      <div style="height:24px;background:var(--border);border-radius:4px;overflow:hidden"><div style="height:100%;width:${Math.max(s.pct,2)}%;background:${s.color};border-radius:4px;transition:width 0.8s ease"></div></div>
-    </div>`).join('');
-}
+// All charts in this panel were removed in favor of honest "not connected"
+// placeholders (see the Analytics admin panel markup), so there's nothing
+// left for this function to draw. Kept as a no-op since showAdminPanel()
+// still calls it when the Analytics tab is opened.
+function renderAnalyticsPanel() {}
 
 // ── Render: Support Tickets ───────────────────────────────────────────────
 // Demo data — support tickets aren't connected to a backend yet.
@@ -1737,8 +1706,8 @@ function renderSupportPanel() {
       <td style="font-size:0.82rem">${t.assign}</td>
       <td style="font-size:0.78rem;color:var(--muted)">${t.created}</td>
       <td><div style="display:flex;gap:4px">
-        <button class="btn btn-primary btn-sm" onclick="showToast('Ticket opened','🎫')">Reply</button>
-        <button class="btn btn-ghost btn-sm" onclick="showToast('Resolved','✅')">Close</button>
+        <button class="btn btn-primary btn-sm" onclick="showToast('Ticket reply isn\'t connected yet','🎫')">Reply</button>
+        <button class="btn btn-ghost btn-sm" onclick="showToast('Ticket status changes aren\'t connected yet','✅')">Close</button>
       </div></td>
     </tr>`).join('');
 }
@@ -1779,7 +1748,7 @@ function renderAuditPanel() {
           <div class="form-group"><label class="form-label" style="display:flex;justify-content:space-between">Down Payment <span id="downPayLabel" style="color:var(--secondary)">20%</span></label><input type="range" min="5" max="50" value="20" oninput="document.getElementById('downPayLabel').textContent=this.value+'%';calcFullEMI()"></div>
           <div class="form-group"><label class="form-label" style="display:flex;justify-content:space-between">Interest Rate <span id="fullRateLabel" style="color:var(--secondary)">8.5%</span></label><input type="range" min="6" max="15" step="0.1" value="8.5" oninput="document.getElementById('fullRateLabel').textContent=parseFloat(this.value).toFixed(1)+'%';calcFullEMI()"></div>
           <div class="form-group"><label class="form-label" style="display:flex;justify-content:space-between">Loan Tenure <span id="fullTenureLabel" style="color:var(--secondary)">20 Years</span></label><input type="range" min="1" max="30" value="20" oninput="document.getElementById('fullTenureLabel').textContent=this.value+' Years';calcFullEMI()"></div>
-          <div class="calc-result"><div style="font-size:0.8rem;color:var(--muted);margin-bottom:4px">Monthly EMI</div><div class="amount" id="fullEmiResult">₹62,131</div><div style="display:flex;justify-content:center;gap:2rem;margin-top:8px;font-size:0.78rem;color:var(--muted)"><span>Loan: <strong id="loanAmtCalc" style="color:var(--primary)">₹80L</strong></span><span>Interest: <strong id="totalIntCalc" style="color:var(--danger)">₹69.1L</strong></span></div></div>
+          <div class="calc-result"><div style="font-size:0.8rem;color:var(--muted);margin-bottom:4px">Monthly EMI</div><div class="amount" id="fullEmiResult">₹69,426</div><div style="display:flex;justify-content:center;gap:2rem;margin-top:8px;font-size:0.78rem;color:var(--muted)"><span>Loan: <strong id="loanAmtCalc" style="color:var(--primary)">₹80L</strong></span><span>Interest: <strong id="totalIntCalc" style="color:var(--danger)">₹86.6L</strong></span></div></div>
         </div>
         <!-- ROI -->
         <div class="calc-section">
@@ -1793,7 +1762,7 @@ function renderAuditPanel() {
               <div><div style="font-size:0.75rem;color:var(--muted)">Net Rental Yield</div><div style="font-family:'Poppins',sans-serif;font-size:1.3rem;font-weight:700;color:var(--secondary)" id="netYield">6.0%</div></div>
               <div><div style="font-size:0.75rem;color:var(--muted)">5-Year ROI</div><div style="font-family:'Poppins',sans-serif;font-size:1.3rem;font-weight:700;color:#10B981" id="fiveYearROI">62.4%</div></div>
             </div>
-            <div style="font-size:0.78rem;color:var(--muted)">🤖 AI rates this investment: <strong style="color:#10B981">Excellent</strong></div>
+            <div style="font-size:0.78rem;color:var(--muted)">Investment rating: <strong id="roiRating" style="color:#10B981">—</strong></div>
           </div>
         </div>
         <!-- RENTAL YIELD -->
@@ -1858,7 +1827,7 @@ function renderAuditPanel() {
       </div>
       <div class="grid-2" style="align-items:center;gap:4rem">
         <div><div class="eyebrow" style="margin-bottom:1rem">Our Mission</div><h2 style="margin-bottom:1rem">Democratizing Real Estate with AI</h2><p style="color:var(--muted);line-height:1.8;margin-bottom:1.2rem">We believe every Indian deserves access to intelligent, transparent, and fair real estate transactions. Our AI analyzes property data to give you accurate insights.</p><p style="color:var(--muted);line-height:1.8">We're building an AI-powered real estate platform trusted by builders, agents, buyers and tenants alike.</p></div>
-        <div class="chart-card"><h3 style="margin-bottom:0.5rem">Platform Growth <span class="tag" style="background:rgba(255,255,255,0.08);color:var(--muted);font-size:0.7rem;margin-left:6px">Demo data</span></h3><canvas id="aboutGrowthChart" height="220"></canvas></div>
+        <div class="chart-card"><h3 style="margin-bottom:0.5rem">Platform Growth <span class="tag" style="background:rgba(255,255,255,0.08);color:var(--muted);font-size:0.7rem;margin-left:6px">Demo data</span></h3><div style="padding:2.5rem 1rem;text-align:center;color:var(--muted);font-size:0.85rem">This chart isn't connected to a backend yet</div></div>
       </div>
     </div>
   </div>
@@ -1871,13 +1840,13 @@ function renderAuditPanel() {
     <button class="modal-close" onclick="closeModal('loginModal')">✕</button>
     <div style="text-align:center;margin-bottom:1.5rem"><div style="font-size:2.5rem">🏠</div><h2 style="margin-top:8px">Welcome Back</h2><p class="sub">Sign in to EstateAI Pro</p></div>
     <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:1.5rem">
-      <button class="btn btn-ghost" style="justify-content:center;display:flex;align-items:center;gap:10px" onclick="showToast('Signing in with Google','🔐')">🔵 Continue with Google</button>
-      <button class="btn btn-ghost" style="justify-content:center;display:flex;align-items:center;gap:10px" onclick="showToast('OTP sent to phone','📱')">📱 Continue with Phone OTP</button>
+      <button class="btn btn-ghost" style="justify-content:center;display:flex;align-items:center;gap:10px" onclick="showToast('Google sign-in isn\'t connected to a backend yet','🔐')">🔵 Continue with Google</button>
+      <button class="btn btn-ghost" style="justify-content:center;display:flex;align-items:center;gap:10px" onclick="showToast('Phone OTP isn\'t connected to a backend yet','📱')">📱 Continue with Phone OTP</button>
     </div>
     <div style="display:flex;align-items:center;gap:12px;margin-bottom:1.5rem;color:var(--muted);font-size:0.85rem"><div style="flex:1;height:1px;background:var(--border)"></div><span>or email</span><div style="flex:1;height:1px;background:var(--border)"></div></div>
     <div class="form-group"><label class="form-label">Email Address</label><input type="email" id="loginEmail" placeholder="you@example.com"></div>
     <div class="form-group"><label class="form-label">Password</label><input type="password" id="loginPassword" placeholder="••••••••"></div>
-    <div style="display:flex;justify-content:space-between;font-size:0.82rem;margin-bottom:1.5rem"><label style="display:flex;align-items:center;gap:6px;cursor:pointer"><input type="checkbox"> Remember me</label><span style="color:var(--secondary);cursor:pointer" onclick="showToast('Reset link sent','📧')">Forgot password?</span></div>
+    <div style="display:flex;justify-content:space-between;font-size:0.82rem;margin-bottom:1.5rem"><label style="display:flex;align-items:center;gap:6px;cursor:pointer"><input type="checkbox"> Remember me</label><span style="color:var(--secondary);cursor:pointer" onclick="showToast('Password reset isn\'t connected to a backend yet','📧')">Forgot password?</span></div>
     <div id="loginError" style="display:none;color:#EF4444;font-size:0.82rem;margin-bottom:1rem;text-align:center"></div>
     <button class="btn btn-primary" style="width:100%;padding:13px" id="loginSubmitBtn" onclick="handleLogin()">Sign In</button>
     <p style="text-align:center;margin-top:1rem;font-size:0.875rem;color:var(--muted)">Don't have an account? <span style="color:var(--secondary);cursor:pointer;font-weight:600" onclick="closeModal('loginModal');showModal('registerModal')">Register</span></p>
@@ -1912,11 +1881,11 @@ function renderAuditPanel() {
   <div class="ai-chat-window" id="aiChatWindow">
     <div class="ai-chat-header">
       <div style="width:36px;height:36px;background:linear-gradient(135deg,#2563EB,#7c3aed);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.1rem">🤖</div>
-      <div><div style="font-weight:600;font-size:0.875rem">EstateAI Assistant</div><div style="font-size:0.75rem;color:var(--muted);display:flex;align-items:center;gap:4px"><div class="ai-indicator"></div> Online</div></div>
+      <div><div style="font-weight:600;font-size:0.875rem">EstateAI Assistant</div><div style="font-size:0.75rem;color:var(--muted)">Not connected</div></div>
       <button style="margin-left:auto;background:none;border:none;cursor:pointer;color:var(--muted);font-size:1.1rem" onclick="toggleChat()">✕</button>
     </div>
     <div class="ai-chat-msgs" id="aiMsgs">
-      <div class="ai-msg ai">👋 Hi! I'm your AI property assistant. I can help you find properties, answer questions about pricing, localities, EMI calculations, and more. What are you looking for?</div>
+      <div class="ai-msg ai">👋 This AI assistant isn't connected to a real backend yet — messages sent here won't be processed. Try the search and filter tools instead.</div>
     </div>
     <div class="ai-chat-input">
       <input type="text" placeholder="Ask about properties, prices, EMI..." id="chatInput" onkeydown="if(event.key==='Enter')sendChat()">
@@ -1961,6 +1930,7 @@ function showPage(id){
   if(id==='landing')setTimeout(initLandingCharts,100);
   if(id==='about')setTimeout(initAboutChart,100);
   if(id==='detail')setTimeout(initDetailChart,100);
+  if(id==='calculator')setTimeout(()=>{calcFullEMI();calcROI();calcRV();},50);
   document.getElementById('notifDropdown').classList.remove('open');
 }
 
@@ -2004,15 +1974,10 @@ document.addEventListener('click',e=>{if(!e.target.closest('#notifBtn')&&!e.targ
 //  AI CHAT
 // ═══════════════════════════════════════════════
 let chatOpen=false;
-const chatReplies=[
-  "Based on your query, I'd recommend checking properties in Koramangala and Indiranagar — both have excellent infrastructure and are seeing 8-12% price appreciation annually.",
-  "For a ₹1 Cr budget in Bangalore, you can get a good 2BHK (900-1100 sqft) in Whitefield or Marathahalli. These areas have metro connectivity and strong rental demand.",
-  "The current home loan rates are between 8.4-9.1% per annum. With ₹1 Cr loan for 20 years, your EMI would be approximately ₹87,000-₹91,000 per month.",
-  "RERA registration ensures the project is legally compliant and protected. Always check the RERA number on the Maharashtra RERA website before booking.",
-  "Great question! For investment purposes, North Bangalore (Hebbal, Devanahalli) offers the best ROI due to airport proximity and IT corridor development.",
-  "I found 12 properties matching your criteria! Would you like me to show you the top 3 picks based on price-to-value ratio?",
-];
-let replyIdx=0;
+// AI chat replies were previously a hardcoded fallback array used when the
+// (unauthenticated, browser-side) Anthropic API call failed — which it
+// always did, since no API key was ever wired in. Removed in favor of an
+// honest "not connected" message; see sendChat() below.
 
 function toggleChat(){
   chatOpen=!chatOpen;
@@ -2027,21 +1992,7 @@ async function sendChat(){
   msgs.innerHTML+=`<div class="ai-msg user">${msg}</div>`;
   input.value='';
   msgs.scrollTop=msgs.scrollHeight;
-  // Show typing indicator
-  const typingId='typing-'+Date.now();
-  msgs.innerHTML+=`<div class="ai-msg ai" id="${typingId}" style="opacity:0.6">...</div>`;
-  msgs.scrollTop=msgs.scrollHeight;
-  // Call Anthropic API
-  try{
-    const resp=await fetch('https://api.anthropic.com/v1/messages',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({model:'claude-sonnet-4-6',max_tokens:1000,system:'You are an expert Indian real estate AI assistant for EstateAI Pro. Answer questions about properties, prices, localities, home loans, RERA, investment advice in India. Be concise (2-3 sentences), helpful, and use ₹ for currency. Include emojis to be friendly.',messages:[{role:'user',content:msg}]})});
-    const data=await resp.json();
-    const reply=data.content?.[0]?.text||chatReplies[replyIdx%chatReplies.length];
-    document.getElementById(typingId).textContent=reply;
-    replyIdx++;
-  }catch{
-    document.getElementById(typingId).textContent=chatReplies[replyIdx%chatReplies.length];
-    replyIdx++;
-  }
+  msgs.innerHTML+=`<div class="ai-msg ai">This AI assistant isn't connected to a real backend yet — your message wasn't processed. Try the search filters instead to find properties.</div>`;
   msgs.scrollTop=msgs.scrollHeight;
 }
 
@@ -2053,15 +2004,9 @@ async function generateAIDesc(){
   const desc=document.getElementById('propDesc');
   loader.style.display='block';
   desc.value='';
-  try{
-    const resp=await fetch('https://api.anthropic.com/v1/messages',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({model:'claude-sonnet-4-6',max_tokens:1000,messages:[{role:'user',content:'Write a compelling 3-paragraph property listing description for a luxury 3BHK apartment in Bandra West, Mumbai, 1540 sqft, on 18th floor, with sea views, premium amenities including pool, gym, 24x7 security. Target HNI buyers. Keep it under 200 words.'}]})});
-    const data=await resp.json();
-    desc.value=data.content?.[0]?.text||'Nestled in the prestigious enclave of Bandra West, this stunning 3BHK apartment redefines luxury living in Mumbai. Perched on the 18th floor, floor-to-ceiling windows frame breathtaking Arabian Sea views that transform with every season.\n\nThe 1,540 sq ft residence features Italian marble flooring, a modular kitchen with premium appliances, and custom wardrobes — every element reflecting impeccable attention to detail. Three spacious bedrooms with ensuite bathrooms provide sanctuary for every member of the family.\n\nResidents enjoy exclusive access to a temperature-controlled swimming pool, state-of-the-art gymnasium, landscaped rooftop gardens, and 24×7 concierge services. Located minutes from the Bandra-Worli Sea Link, this address offers unmatched connectivity to South Mumbai and BKC.';
-  }catch{
-    desc.value='Nestled in the prestigious enclave of Bandra West, this stunning 3BHK apartment redefines luxury living in Mumbai. Perched on the 18th floor, floor-to-ceiling windows frame breathtaking Arabian Sea views that transform with every season.\n\nThe 1,540 sq ft residence features Italian marble flooring, a modular kitchen with premium appliances, and custom wardrobes. Three spacious bedrooms with ensuite bathrooms provide sanctuary for every member.\n\nResidents enjoy exclusive access to a swimming pool, gymnasium, landscaped gardens, and 24×7 concierge services.';
-  }
+  await new Promise(r=>setTimeout(r,400));
   loader.style.display='none';
-  showToast('AI description generated!','🤖');
+  showToast('AI description generation isn\'t connected to a backend yet','🚧');
 }
 
 // ═══════════════════════════════════════════════
@@ -2111,7 +2056,7 @@ function renderAgentCard(a){
       <div class="agent-stat"><strong>${a.deals}</strong><span>Deals</span></div>
       <div class="agent-stat"><strong>${a.exp}</strong><span>Exp</span></div>
     </div>
-    <button class="btn btn-primary" style="width:100%;margin-top:8px" onclick="showToast('Contacting ${a.name}...','📞')">Contact Agent</button>
+    <button class="btn btn-primary" style="width:100%;margin-top:8px" onclick="showToast('Calling isn\'t connected yet','📞')">Contact Agent</button>
   </div>`;
 }
 
@@ -2155,8 +2100,24 @@ function calcEMI(){
   document.getElementById('tenure').textContent=document.getElementById('tenureSlider').value+' Years';
 }
 function calcFullEMI(){
-  const emi=Math.round(62131);
-  document.getElementById('fullEmiResult').textContent='₹'+emi.toLocaleString('en-IN');
+  const propValL = parseFloat(document.getElementById('propValLabel').textContent.replace(/[₹,L]/g,'')) || 100;
+  const propVal = propValL * 100000; // slider is in lakhs
+  const downPayPct = parseFloat(document.getElementById('downPayLabel').textContent.replace('%','')) || 20;
+  const ratePct = parseFloat(document.getElementById('fullRateLabel').textContent.replace('%','')) || 8.5;
+  const years = parseFloat(document.getElementById('fullTenureLabel').textContent.replace(' Years','')) || 20;
+
+  const loanAmt = propVal * (1 - downPayPct / 100);
+  const monthlyRate = (ratePct / 100) / 12;
+  const months = years * 12;
+  const emi = monthlyRate === 0
+    ? loanAmt / months
+    : (loanAmt * monthlyRate * Math.pow(1 + monthlyRate, months)) / (Math.pow(1 + monthlyRate, months) - 1);
+  const totalPayment = emi * months;
+  const totalInterest = totalPayment - loanAmt;
+
+  document.getElementById('fullEmiResult').textContent = '₹' + Math.round(emi).toLocaleString('en-IN');
+  document.getElementById('loanAmtCalc').textContent = '₹' + (loanAmt / 100000).toFixed(1) + 'L';
+  document.getElementById('totalIntCalc').textContent = '₹' + (totalInterest / 100000).toFixed(1) + 'L';
 }
 function calcROI(){
   const purchase=parseFloat(document.getElementById('roiPurchase').value)||10000000;
@@ -2167,6 +2128,15 @@ function calcROI(){
   const fiveYearROI=((Math.pow(1+appreciation/100,5)-1)*100+netYield*5).toFixed(1);
   document.getElementById('netYield').textContent=netYield+'%';
   document.getElementById('fiveYearROI').textContent=fiveYearROI+'%';
+  const ratingEl=document.getElementById('roiRating');
+  const yieldNum=parseFloat(netYield);
+  let rating, color;
+  if(yieldNum>=6){rating='Strong';color='#10B981';}
+  else if(yieldNum>=3){rating='Moderate';color='#F59E0B';}
+  else if(yieldNum>=0){rating='Weak';color='#EF4444';}
+  else {rating='Negative';color='#EF4444';}
+  ratingEl.textContent=rating;
+  ratingEl.style.color=color;
 }
 function calcRV(){
   const propVal=parseFloat(document.getElementById('rvPropVal').value)||10000000;
@@ -2188,17 +2158,11 @@ function tc(){return isDark()?'rgba(255,255,255,0.7)':'rgba(15,23,42,0.7)';}
 let chartInstances={};
 function destroyChart(id){if(chartInstances[id]){chartInstances[id].destroy();delete chartInstances[id];}}
 
-function initLandingCharts(){
-  destroyChart('aiPrice');
-  const ctx=document.getElementById('aiPriceChart');if(!ctx)return;
-  chartInstances['aiPrice']=new Chart(ctx,{type:'line',data:{labels:['Jan','Mar','May','Jul','Sep','Nov','Jan','Mar'],datasets:[{data:[195,205,210,220,235,248,265,285],borderColor:'#2563EB',backgroundColor:'rgba(37,99,235,0.08)',fill:true,tension:0.4,pointRadius:3}]},options:{...chartDefaults,plugins:{legend:{display:false}},scales:{x:{grid:{display:false},ticks:{color:tc()}},y:{grid:{color:'rgba(128,128,128,0.06)'},ticks:{color:tc(),callback:v=>'₹'+v+'L'}}}}});
-}
-
-function initDetailChart(){
-  destroyChart('priceHistory');
-  const ctx=document.getElementById('priceHistoryChart');if(!ctx)return;
-  chartInstances['priceHistory']=new Chart(ctx,{type:'line',data:{labels:['2020','2021','2022','2023','2024','2025'],datasets:[{label:'Price (₹Cr)',data:[1.8,1.95,2.1,2.32,2.58,2.85],borderColor:'#2563EB',backgroundColor:'rgba(37,99,235,0.1)',fill:true,tension:0.4,pointRadius:4,pointBackgroundColor:'#2563EB'}]},options:{...chartDefaults,plugins:{legend:{display:false}},scales:{x:{grid:{display:false},ticks:{color:tc()}},y:{ticks:{color:tc(),callback:v=>'₹'+v+'Cr'}}}}});
-}
+// initLandingCharts/initDetailChart used to draw the fake AI price
+// prediction and price history charts; both canvases were removed in
+// favor of honest "not connected" text, so these are now no-ops.
+function initLandingCharts(){}
+function initDetailChart(){}
 
 function initAdminCharts(){
   const months=['Jul','Aug','Sep','Oct','Nov','Dec','Jan','Feb','Mar','Apr','May','Jun'];
@@ -2206,8 +2170,9 @@ function initAdminCharts(){
   const r=document.getElementById('adminRevenueChart');if(r)chartInstances['adminRevenue']=new Chart(r,{type:'bar',data:{labels:months,datasets:[{data:[18,21,19,24,26,28,22,25,27,24,26,28],backgroundColor:'rgba(37,99,235,0.7)',borderRadius:6}]},options:{...chartDefaults,scales:{x:{grid:{display:false},ticks:{color:tc()}},y:{ticks:{color:tc(),callback:v=>'₹'+v+'L'}}}}});
   destroyChart('adminUser');
   const u=document.getElementById('adminUserChart');if(u)chartInstances['adminUser']=new Chart(u,{type:'line',data:{labels:months,datasets:[{data:[9200,9600,10100,10500,10900,11200,11600,11900,12100,12400,12600,12847],borderColor:'#10B981',backgroundColor:'rgba(16,185,129,0.1)',fill:true,tension:0.4,pointRadius:3}]},options:{...chartDefaults,scales:{x:{grid:{display:false},ticks:{color:tc()}},y:{ticks:{color:tc()}}}}});
-  destroyChart('adminCity');
-  const c=document.getElementById('adminCityChart');if(c)chartInstances['adminCity']=new Chart(c,{type:'bar',data:{labels:['Mumbai','Delhi','Bangalore','Hyderabad','Pune','Chennai'],datasets:[{data:[14200,11800,10400,6800,5200,4800],backgroundColor:['#2563EB','#7c3aed','#10B981','#F59E0B','#EF4444','#06b6d4'],borderRadius:6}]},options:{...chartDefaults,indexAxis:'y',scales:{x:{grid:{display:false},ticks:{color:tc()}},y:{ticks:{color:tc()}}}}});
+  // "Listings by City" is created separately with real data fetched from
+  // /api/stats/by-city — see loadAdminCityChart() in the backend
+  // integration script near the end of this file.
   destroyChart('adminSub');
   const s=document.getElementById('adminSubChart');if(s)chartInstances['adminSub']=new Chart(s,{type:'doughnut',data:{labels:['Basic','Pro','Enterprise'],datasets:[{data:[62,29,9],backgroundColor:['#94A3B8','#2563EB','#F59E0B'],borderWidth:0}]},options:{responsive:true,maintainAspectRatio:true,plugins:{legend:{position:'bottom',labels:{color:tc(),padding:16}}}}});
 }
@@ -2277,7 +2242,7 @@ document.addEventListener('DOMContentLoaded',init);
       <div class="sidebar-section">
         <div class="sidebar-label">Search</div>
         <div class="sidebar-item" onclick="showPage('listings')"><span class="icon">🔍</span> Find Rentals</div>
-        <div class="sidebar-item" onclick="showToast('Saved rentals','❤️')"><span class="icon">❤️</span> Saved Rentals</div>
+        <div class="sidebar-item" onclick="showToast('Saved rentals isn\'t connected to a backend yet','❤️')"><span class="icon">❤️</span> Saved Rentals</div>
       </div>
       <div class="sidebar-section">
         <div class="sidebar-label">Account</div>
@@ -2310,13 +2275,10 @@ document.addEventListener('DOMContentLoaded',init);
       </div>
       <!-- PAYMENT HISTORY -->
       <div class="table-card" style="margin-bottom:2rem">
-        <div class="table-head"><h3>Rent Payment History</h3><button class="btn btn-primary btn-sm" onclick="showToast('Paying rent...','💳')">Pay July Rent →</button></div>
+        <div class="table-head"><h3>Rent Payment History</h3><button class="btn btn-primary btn-sm" onclick="showToast('Rent payments aren\\'t connected to a backend yet','💳')">Pay Rent →</button></div>
         <table><thead><tr><th>Month</th><th>Amount</th><th>Due Date</th><th>Paid On</th><th>Status</th><th>Receipt</th></tr></thead>
         <tbody>
-          <tr><td style="font-weight:600">July 2025</td><td>₹55,000</td><td>Jul 1, 2025</td><td>—</td><td><span class="tag tag-amber">⚠ Due</span></td><td>—</td></tr>
-          <tr><td style="font-weight:600">June 2025</td><td>₹55,000</td><td>Jun 1, 2025</td><td>May 31, 2025</td><td><span class="tag tag-green">✓ Paid</span></td><td><button class="btn btn-ghost btn-sm" onclick="showToast('Receipt downloaded','📄')">Download</button></td></tr>
-          <tr><td style="font-weight:600">May 2025</td><td>₹55,000</td><td>May 1, 2025</td><td>Apr 30, 2025</td><td><span class="tag tag-green">✓ Paid</span></td><td><button class="btn btn-ghost btn-sm" onclick="showToast('Receipt downloaded','📄')">Download</button></td></tr>
-          <tr><td style="font-weight:600">Apr 2025</td><td>₹55,000</td><td>Apr 1, 2025</td><td>Apr 1, 2025</td><td><span class="tag tag-green">✓ Paid</span></td><td><button class="btn btn-ghost btn-sm" onclick="showToast('Receipt downloaded','📄')">Download</button></td></tr>
+          <tr><td colspan="6" style="text-align:center;padding:1.5rem;color:var(--muted)">No payment history yet — rent payments aren't connected to a backend yet</td></tr>
         </tbody></table>
       </div>
       <!-- MAINTENANCE REQUESTS -->
@@ -2325,14 +2287,12 @@ document.addEventListener('DOMContentLoaded',init);
           <div class="table-head"><h3>🔧 Maintenance Requests</h3><button class="btn btn-primary btn-sm" onclick="showPage('maintenance')">+ New Request</button></div>
           <table><thead><tr><th>Issue</th><th>Date</th><th>Status</th></tr></thead>
           <tbody>
-            <tr><td><div style="font-weight:600">AC not cooling</div><div style="font-size:0.75rem;color:var(--muted)">Living room unit</div></td><td>Jun 12</td><td><span class="tag tag-amber">In Progress</span></td></tr>
-            <tr><td><div style="font-weight:600">Leaking tap</div><div style="font-size:0.75rem;color:var(--muted)">Kitchen</div></td><td>May 3</td><td><span class="tag tag-green">Resolved</span></td></tr>
-            <tr><td><div style="font-weight:600">Intercom issue</div><div style="font-size:0.75rem;color:var(--muted)">Main door</div></td><td>Mar 18</td><td><span class="tag tag-green">Resolved</span></td></tr>
+            <tr><td colspan="3" style="text-align:center;padding:1.5rem;color:var(--muted)">No maintenance requests yet</td></tr>
           </tbody></table>
         </div>
         <div class="chart-card">
-          <h3>Rent Payment Chart</h3>
-          <canvas id="tenantRentChart" height="200"></canvas>
+          <h3>Rent Payment Chart <span class="tag" style="background:rgba(255,255,255,0.08);color:var(--muted);font-size:0.7rem;margin-left:6px">Demo data</span></h3>
+          <div style="padding:2.5rem 1rem;text-align:center;color:var(--muted);font-size:0.85rem">This chart isn't connected to a backend yet</div>
         </div>
       </div>
     </div>
@@ -2375,7 +2335,7 @@ document.addEventListener('DOMContentLoaded',init);
           </div>
         </div>
         <div class="form-group"><label class="form-label">Describe the Issue *</label><textarea placeholder="Describe the problem in detail..."></textarea></div>
-        <div style="border:2px dashed var(--border);border-radius:var(--radius);padding:1.5rem;text-align:center;margin-bottom:1rem;cursor:pointer" onclick="showToast('Camera opened','📷')">
+        <div style="border:2px dashed var(--border);border-radius:var(--radius);padding:1.5rem;text-align:center;margin-bottom:1rem;cursor:pointer" onclick="showToast('Camera capture isn\'t connected yet','📷')">
           <div style="font-size:1.8rem">📷</div><div style="font-weight:600;margin-top:6px;font-size:0.9rem">Upload Photos</div>
           <div style="font-size:0.78rem;color:var(--muted);margin-top:4px">Max 5 photos · JPG, PNG</div>
         </div>
@@ -2397,37 +2357,12 @@ document.addEventListener('DOMContentLoaded',init);
 <div class="page" id="page-compare">
   <div style="padding-top:68px">
     <div class="container section">
-      <div class="section-header"><div class="eyebrow">Compare</div><h2>Property Comparison</h2><p>Compare up to 3 properties side-by-side</p></div>
-      <div style="display:grid;grid-template-columns:200px repeat(3,1fr);gap:0;border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;background:var(--card-bg)">
-        <!-- HEADER ROW -->
-        <div style="background:rgba(37,99,235,0.04);border-right:1px solid var(--border);padding:1.2rem;font-weight:700;font-size:0.85rem;color:var(--muted);display:flex;align-items:center">Features</div>
-        <div id="comp1" style="border-right:1px solid var(--border);padding:1.2rem;text-align:center">
-          <div style="height:100px;background:linear-gradient(135deg,#1e3a5f,#2563EB);border-radius:var(--radius);display:flex;align-items:center;justify-content:center;font-size:2.5rem;margin-bottom:10px">🏙</div>
-          <div style="font-weight:700;font-size:0.95rem">Prestige Sky High</div>
-          <div style="font-size:0.78rem;color:var(--muted)">Bandra West, Mumbai</div>
-          <div style="font-family:'Poppins',sans-serif;font-weight:700;color:var(--secondary);margin-top:6px">₹2.85 Cr</div>
-          <button class="btn btn-ghost btn-sm" style="margin-top:8px;width:100%" onclick="showToast('Removed from comparison','🗑')">Remove</button>
-        </div>
-        <div id="comp2" style="border-right:1px solid var(--border);padding:1.2rem;text-align:center">
-          <div style="height:100px;background:linear-gradient(135deg,#2563EB,#7c3aed);border-radius:var(--radius);display:flex;align-items:center;justify-content:center;font-size:2.5rem;margin-bottom:10px">🏘</div>
-          <div style="font-weight:700;font-size:0.95rem">Brigade Triumph</div>
-          <div style="font-size:0.78rem;color:var(--muted)">Koramangala, Bangalore</div>
-          <div style="font-family:'Poppins',sans-serif;font-weight:700;color:var(--secondary);margin-top:6px">₹1.24 Cr</div>
-          <button class="btn btn-ghost btn-sm" style="margin-top:8px;width:100%" onclick="showToast('Removed from comparison','🗑')">Remove</button>
-        </div>
-        <div id="comp3" style="padding:1.2rem;text-align:center">
-          <div style="height:100px;background:linear-gradient(135deg,#1e3a5f,#10B981);border-radius:var(--radius);display:flex;align-items:center;justify-content:center;font-size:2.5rem;margin-bottom:10px">🏡</div>
-          <div style="font-weight:700;font-size:0.95rem">Lodha Serenity Villa</div>
-          <div style="font-size:0.78rem;color:var(--muted)">Palava, Thane</div>
-          <div style="font-family:'Poppins',sans-serif;font-weight:700;color:var(--secondary);margin-top:6px">₹3.8 Cr</div>
-          <button class="btn btn-ghost btn-sm" style="margin-top:8px;width:100%" onclick="showToast('Removed from comparison','🗑')">Remove</button>
-        </div>
-        <!-- ROWS -->
-        <div id="compareRows"></div>
+      <div class="section-header"><div class="eyebrow">Compare</div><h2>Property Comparison</h2><p>This feature isn't connected to a backend yet</p></div>
+      <div style="text-align:center;padding:3rem;color:var(--muted);border:1px solid var(--border);border-radius:var(--radius-lg);background:var(--card-bg)">
+        Side-by-side property comparison isn't connected to a backend yet. <span style="color:var(--secondary);cursor:pointer;text-decoration:underline" onclick="showPage('listings')">Browse listings</span> to find properties.
       </div>
       <div style="text-align:center;margin-top:2rem;display:flex;gap:10px;justify-content:center">
         <button class="btn btn-primary" onclick="showPage('listings')">← Back to Listings</button>
-        <button class="btn btn-ghost" onclick="showToast('Comparison shared!','🔗')">🔗 Share Comparison</button>
       </div>
     </div>
   </div>
@@ -2437,7 +2372,7 @@ document.addEventListener('DOMContentLoaded',init);
 <div class="page" id="page-kyc">
   <div style="padding-top:68px">
     <div class="container section" style="max-width:760px">
-      <div class="section-header"><div class="eyebrow">Verification</div><h2>Complete Your KYC</h2><p>Verified users get 3x more responses from agents and builders</p></div>
+      <div class="section-header"><div class="eyebrow">Verification</div><h2>Complete Your KYC</h2><p>Verify your identity to build trust with agents and builders</p></div>
       <!-- STEPS PROGRESS -->
       <div style="display:flex;align-items:center;margin-bottom:3rem">
         <div style="text-align:center;flex:1"><div style="width:44px;height:44px;border-radius:50%;background:var(--secondary);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 8px">✓</div><div style="font-size:0.8rem;font-weight:600;color:var(--secondary)">Account</div></div>
@@ -2466,19 +2401,19 @@ document.addEventListener('DOMContentLoaded',init);
         <div style="display:flex;flex-direction:column;gap:12px">
           <div style="border:1.5px solid var(--border);border-radius:var(--radius);padding:1.2rem;display:flex;align-items:center;justify-content:space-between;gap:1rem">
             <div style="display:flex;align-items:center;gap:12px"><div style="width:40px;height:40px;background:rgba(37,99,235,0.1);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.2rem">🪪</div><div><div style="font-weight:600;font-size:0.9rem">Aadhaar Card *</div><div style="font-size:0.78rem;color:var(--muted)">Front & back · JPG, PNG, PDF · Max 2MB</div></div></div>
-            <button class="btn btn-ghost btn-sm" onclick="showToast('File selected','📎')">Upload</button>
+            <button class="btn btn-ghost btn-sm" onclick="showToast('File upload isn\'t connected yet','📎')">Upload</button>
           </div>
           <div style="border:1.5px solid var(--border);border-radius:var(--radius);padding:1.2rem;display:flex;align-items:center;justify-content:space-between;gap:1rem">
             <div style="display:flex;align-items:center;gap:12px"><div style="width:40px;height:40px;background:rgba(245,158,11,0.1);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.2rem">🪪</div><div><div style="font-weight:600;font-size:0.9rem">PAN Card *</div><div style="font-size:0.78rem;color:var(--muted)">Clear scan required · JPG, PNG, PDF</div></div></div>
-            <button class="btn btn-ghost btn-sm" onclick="showToast('File selected','📎')">Upload</button>
+            <button class="btn btn-ghost btn-sm" onclick="showToast('File upload isn\'t connected yet','📎')">Upload</button>
           </div>
           <div style="border:1.5px solid var(--border);border-radius:var(--radius);padding:1.2rem;display:flex;align-items:center;justify-content:space-between;gap:1rem">
             <div style="display:flex;align-items:center;gap:12px"><div style="width:40px;height:40px;background:rgba(16,185,129,0.1);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.2rem">🏦</div><div><div style="font-weight:600;font-size:0.9rem">Bank Statement (last 3 months)</div><div style="font-size:0.78rem;color:var(--muted)">For income verification</div></div></div>
-            <button class="btn btn-ghost btn-sm" onclick="showToast('File selected','📎')">Upload</button>
+            <button class="btn btn-ghost btn-sm" onclick="showToast('File upload isn\'t connected yet','📎')">Upload</button>
           </div>
           <div style="border:1.5px solid var(--border);border-radius:var(--radius);padding:1.2rem;display:flex;align-items:center;justify-content:space-between;gap:1rem">
             <div style="display:flex;align-items:center;gap:12px"><div style="width:40px;height:40px;background:rgba(124,58,237,0.1);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.2rem">📸</div><div><div style="font-weight:600;font-size:0.9rem">Selfie / Live Photo</div><div style="font-size:0.78rem;color:var(--muted)">Face matching with Aadhaar photo</div></div></div>
-            <button class="btn btn-ghost btn-sm" onclick="showToast('Camera opened','📷')">Take Photo</button>
+            <button class="btn btn-ghost btn-sm" onclick="showToast('Camera capture isn\'t connected yet','📷')">Take Photo</button>
           </div>
         </div>
       </div>
@@ -2493,7 +2428,7 @@ document.addEventListener('DOMContentLoaded',init);
           <div style="display:flex;align-items:center;justify-content:space-between;padding:10px;background:rgba(239,68,68,0.04);border-radius:var(--radius)"><div style="display:flex;align-items:center;gap:10px"><span style="font-size:1rem">❌</span><span style="font-size:0.875rem;font-weight:500">Face / Liveness check</span></div><span class="tag tag-red">Not started</span></div>
         </div>
       </div>
-      <button class="btn btn-primary btn-lg" style="width:100%" onclick="showToast('KYC submitted for review! Usually takes 24–48 hours.','🎉')">Submit for Verification →</button>
+      <button class="btn btn-primary btn-lg" style="width:100%" onclick="showToast('KYC verification isn\'t connected to a backend yet','🚧')">Submit for Verification →</button>
     </div>
   </div>
 </div>
@@ -2502,11 +2437,11 @@ document.addEventListener('DOMContentLoaded',init);
 <div class="page" id="page-support">
   <div style="padding-top:68px">
     <div class="container section">
-      <div class="section-header"><div class="eyebrow">Help & Support</div><h2>Support Center</h2><p>Get help from our team within 24 hours</p></div>
+      <div class="section-header"><div class="eyebrow">Help & Support</div><h2>Support Center</h2><p>This feature isn't connected to a backend yet</p></div>
       <div class="grid-3" style="margin-bottom:3rem">
-        <div class="chart-card" style="text-align:center;cursor:pointer" onclick="showToast('Opening live chat','💬')"><div style="font-size:2.5rem;margin-bottom:12px">💬</div><h3 style="font-size:1.1rem;margin-bottom:6px">Live Chat</h3><p style="color:var(--muted);font-size:0.85rem">Avg response: 2 min</p><div style="display:flex;align-items:center;justify-content:center;gap:6px;margin-top:8px"><div style="width:8px;height:8px;border-radius:50%;background:#10B981"></div><span style="font-size:0.78rem;color:#10B981">Online Now</span></div></div>
-        <div class="chart-card" style="text-align:center;cursor:pointer" onclick="showToast('Calling support...','📞')"><div style="font-size:2.5rem;margin-bottom:12px">📞</div><h3 style="font-size:1.1rem;margin-bottom:6px">Call Support</h3><p style="color:var(--muted);font-size:0.85rem">1800-123-4567 (Toll Free)</p><div style="font-size:0.78rem;color:var(--muted);margin-top:8px">Mon–Sat · 9am–8pm</div></div>
-        <div class="chart-card" style="text-align:center;cursor:pointer" onclick="showToast('Email sent!','📧')"><div style="font-size:2.5rem;margin-bottom:12px">📧</div><h3 style="font-size:1.1rem;margin-bottom:6px">Email Us</h3><p style="color:var(--muted);font-size:0.85rem">support@estateaipro.com</p><div style="font-size:0.78rem;color:var(--muted);margin-top:8px">Reply within 24 hours</div></div>
+        <div class="chart-card" style="text-align:center;cursor:pointer" onclick="showToast('Live chat isn\'t connected to a backend yet','💬')"><div style="font-size:2.5rem;margin-bottom:12px">💬</div><h3 style="font-size:1.1rem;margin-bottom:6px">Live Chat</h3><p style="color:var(--muted);font-size:0.85rem">Not connected yet</p></div>
+        <div class="chart-card" style="text-align:center;cursor:pointer" onclick="showToast('Phone support isn\'t connected to a backend yet','📞')"><div style="font-size:2.5rem;margin-bottom:12px">📞</div><h3 style="font-size:1.1rem;margin-bottom:6px">Call Support</h3><p style="color:var(--muted);font-size:0.85rem">Not connected yet</p></div>
+        <div class="chart-card" style="text-align:center;cursor:pointer" onclick="showToast('Email support isn\'t connected to a backend yet','📧')"><div style="font-size:2.5rem;margin-bottom:12px">📧</div><h3 style="font-size:1.1rem;margin-bottom:6px">Email Us</h3><p style="color:var(--muted);font-size:0.85rem">Not connected yet</p></div>
       </div>
       <!-- RAISE TICKET -->
       <div class="chart-card" style="margin-bottom:2rem;max-width:700px;margin-left:auto;margin-right:auto">
@@ -2548,7 +2483,7 @@ document.addEventListener('DOMContentLoaded',init);
           <div>
             <div class="tag" style="background:rgba(245,158,11,0.15);color:#F59E0B;margin-bottom:1rem">🤖 AI Price Prediction Engine</div>
             <h2 style="color:#fff;margin-bottom:0.8rem;font-size:1.8rem">Get AI Valuation for Any Property</h2>
-            <p style="color:rgba(255,255,255,0.6);margin-bottom:1.5rem;line-height:1.7">Our AI model analyzes 50+ factors including locality trends, infrastructure developments, comparable sales, and macro-economic indicators.</p>
+            <p style="color:rgba(255,255,255,0.6);margin-bottom:1.5rem;line-height:1.7">This AI valuation tool is planned but not yet connected to a real pricing model.</p>
             <div class="form-group"><label class="form-label" style="color:rgba(255,255,255,0.7)">Property Address</label><input class="search-input" type="text" placeholder="Enter locality, city..." style="width:100%"></div>
             <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px">
               <select class="search-input"><option>Property Type</option><option>Apartment</option><option>Villa</option><option>Plot</option></select>
@@ -2569,11 +2504,11 @@ document.addEventListener('DOMContentLoaded',init);
       <!-- MARKET INSIGHTS -->
       <div class="grid-2" style="margin-bottom:2rem">
         <div class="chart-card">
-          <h3>📈 City-wise Price Trends</h3>
-          <canvas id="cityTrendsChart" height="200" style="margin-top:1rem"></canvas>
+          <h3>📈 City-wise Price Trends <span class="tag" style="background:rgba(255,255,255,0.08);color:var(--muted);font-size:0.7rem;margin-left:6px">Demo data</span></h3>
+          <div style="padding:2.5rem 1rem;text-align:center;color:var(--muted);font-size:0.85rem">This chart isn't connected to a backend yet</div>
         </div>
         <div class="chart-card">
-          <h3>🔥 Hot Localities (30-day growth)</h3>
+          <h3>🔥 Hot Localities <span class="tag" style="background:rgba(255,255,255,0.08);color:var(--muted);font-size:0.7rem;margin-left:6px">Not tracked yet</span></h3>
           <div style="margin-top:1rem;display:flex;flex-direction:column;gap:10px" id="hotLocalities"></div>
         </div>
       </div>
@@ -2645,8 +2580,8 @@ document.addEventListener('DOMContentLoaded',init);
       </div>
       <!-- RENT CHARTS -->
       <div class="grid-2">
-        <div class="chart-card"><h3>Monthly Rent Collection <span class="tag" style="background:rgba(255,255,255,0.08);color:var(--muted);font-size:0.7rem;margin-left:6px">Demo data</span></h3><canvas id="rentCollectionChart" height="180" style="margin-top:1rem"></canvas></div>
-        <div class="chart-card"><h3>Expense Breakdown <span class="tag" style="background:rgba(255,255,255,0.08);color:var(--muted);font-size:0.7rem;margin-left:6px">Demo data</span></h3><canvas id="expenseChart" height="180" style="margin-top:1rem"></canvas></div>
+        <div class="chart-card"><h3>Monthly Rent Collection <span class="tag" style="background:rgba(255,255,255,0.08);color:var(--muted);font-size:0.7rem;margin-left:6px">Demo data</span></h3><div style="padding:2.5rem 1rem;text-align:center;color:var(--muted);font-size:0.85rem">This chart isn't connected to a backend yet</div></div>
+        <div class="chart-card"><h3>Expense Breakdown <span class="tag" style="background:rgba(255,255,255,0.08);color:var(--muted);font-size:0.7rem;margin-left:6px">Demo data</span></h3><div style="padding:2.5rem 1rem;text-align:center;color:var(--muted);font-size:0.85rem">This chart isn't connected to a backend yet</div></div>
       </div>
     </div>
   </div>
@@ -2656,7 +2591,7 @@ document.addEventListener('DOMContentLoaded',init);
 <div class="page" id="page-projects">
   <div style="padding-top:68px">
     <div class="container section">
-      <div class="section-header"><div class="eyebrow">New Launches</div><h2>Premium Under-Construction Projects</h2><p>Early-bird pricing from verified developers — RERA registered</p></div>
+      <div class="section-header"><div class="eyebrow">New Launches</div><h2>Premium Under-Construction Projects</h2><p>This feature isn't connected to a backend yet</p></div>
       <!-- FILTER BAR -->
       <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:2rem;align-items:center">
         <select style="width:auto"><option>All Cities</option><option>Mumbai</option><option>Bangalore</option><option>Hyderabad</option></select>
@@ -2714,71 +2649,23 @@ function renderProjectCard(p){
       <div style="font-size:0.8rem;color:var(--muted)">📍 ${p.loc}</div>
       <div class="project-meta">
         <span>📅 ${p.possession}</span>
-        <span style="margin-left:auto"><button class="btn btn-primary btn-sm" onclick="event.stopPropagation();showToast('Brochure sent to email','📧')">Get Brochure</button></span>
+        <span style="margin-left:auto"><button class="btn btn-primary btn-sm" onclick="event.stopPropagation();showToast('Brochure delivery isn\'t connected to a backend yet','📧')">Get Brochure</button></span>
       </div>
     </div>
   </div>`;
 }
 
-// Comparison table rows
-const compareRows = [
-  {label:'Price',vals:['₹2.85 Cr','₹1.24 Cr','₹3.80 Cr']},
-  {label:'Price/sqft',vals:['₹18,500','₹10,508','₹11,875']},
-  {label:'Area',vals:['1,540 sqft','1,180 sqft','3,200 sqft']},
-  {label:'Configuration',vals:['3 BHK / 3T','3 BHK / 2T','4 BHK / 4T']},
-  {label:'Floor',vals:['18th','8th','Independent']},
-  {label:'Parking',vals:['2 Covered','1 Covered','3 Garage']},
-  {label:'Swimming Pool',vals:['✓','✓','✓']},
-  {label:'Gymnasium',vals:['✓','✓','✗']},
-  {label:'Club House',vals:['✓','✗','✓']},
-  {label:'Kids Play Area',vals:['✓','✓','✓']},
-  {label:'24×7 Security',vals:['✓','✓','✓']},
-  {label:'RERA Verified',vals:['✓','✓','✓']},
-  {label:'Possession',vals:['Ready','Ready','Ready']},
-  {label:'Age',vals:['2 years','1 year','New']},
-  {label:'AI Score',vals:['94/100','87/100','91/100']},
-];
-
-function renderCompareRows(){
-  const container = document.getElementById('compareRows');
-  if(!container) return;
-  container.style.display = 'contents';
-  compareRows.forEach(row => {
-    // Label cell
-    const lc = document.createElement('div');
-    lc.style.cssText = 'background:rgba(37,99,235,0.04);border-right:1px solid var(--border);border-top:1px solid var(--border);padding:0.9rem 1.2rem;font-size:0.82rem;font-weight:600;color:var(--muted);display:flex;align-items:center';
-    lc.textContent = row.label;
-    container.appendChild(lc);
-    row.vals.forEach((v, i) => {
-      const vc = document.createElement('div');
-      const isLast = i === 2;
-      vc.style.cssText = `border-top:1px solid var(--border);${!isLast?'border-right:1px solid var(--border);':''}padding:0.9rem 1.2rem;font-size:0.875rem;text-align:center;display:flex;align-items:center;justify-content:center`;
-      if(v === '✓') { vc.innerHTML = '<span style="color:#10B981;font-weight:700;font-size:1.1rem">✓</span>'; }
-      else if(v === '✗') { vc.innerHTML = '<span style="color:#EF4444;font-weight:700;font-size:1.1rem">✗</span>'; }
-      else { vc.textContent = v; vc.style.fontWeight = '500'; }
-      container.appendChild(vc);
-    });
-  });
-}
+// The property comparison feature isn't connected to a backend, so the
+// hardcoded comparison data and renderer that used to live here were
+// removed in favor of an honest "not connected" message on the Compare
+// page itself.
 
 // ═══════════════════════════════════════════════
 //  AI PREDICTION
 // ═══════════════════════════════════════════════
 async function runAIPrediction(){
   const result = document.getElementById('aiPredictionResult');
-  result.innerHTML = `<div style="background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.1);border-radius:var(--radius-lg);padding:1.8rem;text-align:center"><div style="font-size:2rem;margin-bottom:8px">⏳</div><div style="color:rgba(255,255,255,0.6)">AI analysing 50+ data points...</div></div>`;
-  await new Promise(r=>setTimeout(r,1800));
-  result.innerHTML = `
-    <div style="background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:var(--radius-lg);padding:1.8rem">
-      <div style="font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em;color:rgba(255,255,255,0.4);margin-bottom:8px">AI Predicted Valuation</div>
-      <div style="font-family:'Poppins',sans-serif;font-size:2.4rem;font-weight:800;color:#fff;margin-bottom:4px">₹1.28 – 1.46 Cr</div>
-      <div style="font-size:0.82rem;color:rgba(255,255,255,0.5);margin-bottom:1.2rem">Confidence: 91% · Based on 1,248 comparable sales</div>
-      <div style="display:flex;flex-direction:column;gap:8px">
-        <div style="display:flex;justify-content:space-between;font-size:0.82rem"><span style="color:rgba(255,255,255,0.5)">12-month forecast</span><span style="color:#10B981;font-weight:600">↑ +8.4%</span></div>
-        <div style="display:flex;justify-content:space-between;font-size:0.82rem"><span style="color:rgba(255,255,255,0.5)">Rental yield</span><span style="color:#F59E0B;font-weight:600">6.2% p.a.</span></div>
-        <div style="display:flex;justify-content:space-between;font-size:0.82rem"><span style="color:rgba(255,255,255,0.5)">Investment rating</span><span style="color:#10B981;font-weight:700">⭐ Excellent</span></div>
-      </div>
-    </div>`;
+  result.innerHTML = `<div style="background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.1);border-radius:var(--radius-lg);padding:1.8rem;text-align:center"><div style="font-size:2rem;margin-bottom:8px">🚧</div><div style="color:rgba(255,255,255,0.6)">AI price prediction isn't connected to a real model yet — this feature is still in development.</div></div>`;
 }
 
 function setPriority(el,p){['Low','Medium','High'].forEach(t=>{const b=document.getElementById('pri-'+t);if(b){b.className='btn btn-sm '+(t===p?'btn-primary':'btn-ghost');}});}
@@ -3210,7 +3097,7 @@ document.addEventListener('DOMContentLoaded',()=>{
 
       const token = getToken();
       const data = await api(`/properties?${params.toString()}`, { auth: !!token });
-      const heading = grid.parentElement.querySelector('h2');
+      const heading = document.getElementById('listingsCountHeading');
       if (heading) heading.textContent = `${data.pagination.total} Properties Found`;
 
       if (data.properties.length === 0) {
@@ -3221,6 +3108,8 @@ document.addEventListener('DOMContentLoaded',()=>{
       attachWishlistHandlers(grid);
     } catch (err) {
       grid.innerHTML = `<div style="grid-column:1/-1;text-align:center;padding:3rem;color:#EF4444">Couldn't load properties: ${err.message}</div>`;
+      const heading = document.getElementById('listingsCountHeading');
+      if (heading) heading.textContent = 'Couldn\'t load properties';
     }
   }
 
@@ -3314,6 +3203,7 @@ document.addEventListener('DOMContentLoaded',()=>{
       setText('statCitiesAbout', data.cities);
       setText('statListingsAdmin', data.listings);
       setText('statAgentsAdmin', data.agents);
+      setText('statAgentsApprovalsPanel', data.agents);
 
       const modBadge = document.getElementById('pendingModerationBadge');
       if (modBadge) {
@@ -3331,6 +3221,73 @@ document.addEventListener('DOMContentLoaded',()=>{
     }
   }
 
+  async function loadAdminCityChart() {
+    const canvas = document.getElementById('adminCityChart');
+    if (!canvas || typeof Chart === 'undefined') return;
+    const token = getToken();
+    if (!token) return;
+    try {
+      const data = await api('/stats/by-city', { auth: true });
+      if (typeof destroyChart === 'function') destroyChart('adminCity');
+      if (data.cities.length === 0) {
+        return; // leave the canvas empty rather than drawing a fake chart
+      }
+      const palette = ['#2563EB', '#7c3aed', '#10B981', '#F59E0B', '#EF4444', '#06b6d4', '#94A3B8', '#EC4899', '#84CC16', '#0EA5E9'];
+      chartInstances['adminCity'] = new Chart(canvas, {
+        type: 'bar',
+        data: {
+          labels: data.cities.map(c => c.city),
+          datasets: [{
+            data: data.cities.map(c => c.count),
+            backgroundColor: data.cities.map((_, i) => palette[i % palette.length]),
+            borderRadius: 6,
+          }],
+        },
+        options: {
+          ...chartDefaults,
+          indexAxis: 'y',
+          scales: {
+            x: { grid: { display: false }, ticks: { color: tc(), precision: 0 } },
+            y: { ticks: { color: tc() } },
+          },
+        },
+      });
+    } catch (err) {
+      console.warn('Could not load city chart data:', err.message);
+    }
+  }
+
+  async function loadOverviewModerationPreview() {
+    const body = document.getElementById('overviewModerationBody');
+    if (!body) return;
+    const token = getToken();
+    if (!token) {
+      body.innerHTML = `<tr><td colspan="5" style="text-align:center;padding:1.5rem;color:var(--muted)">Sign in as an admin to view pending listings</td></tr>`;
+      return;
+    }
+    try {
+      const res = await fetch(`${window.ESTATEAI_API_BASE || 'http://localhost:4000/api'}/properties/admin/pending`, {
+        headers: { Authorization: `Bearer ${token}` },
+      });
+      const json = await res.json();
+      const pending = (json?.data?.properties || []).slice(0, 5);
+      if (pending.length === 0) {
+        body.innerHTML = `<tr><td colspan="5" style="text-align:center;padding:1.5rem;color:var(--muted)">No listings pending moderation</td></tr>`;
+        return;
+      }
+      body.innerHTML = pending.map(p => `
+        <tr>
+          <td><div style="font-weight:600">${p.title}</div><div style="font-size:0.75rem;color:var(--muted)">${p.locality}, ${p.city}</div></td>
+          <td>${p.city}</td>
+          <td style="font-size:0.82rem;color:var(--muted)">${new Date(p.createdAt).toLocaleDateString()}</td>
+          <td><span class="tag tag-blue">${p.propertyType}</span></td>
+          <td><button class="btn btn-ghost btn-sm" onclick="showAdminPanel('moderation')">Review →</button></td>
+        </tr>`).join('');
+    } catch (err) {
+      body.innerHTML = `<tr><td colspan="5" style="text-align:center;padding:1.5rem;color:#EF4444">Couldn't load pending listings</td></tr>`;
+    }
+  }
+
   // ---------------------------------------------------------------
   // Hook into showPage so the listings page loads live data each
   // time it's opened, and filter controls get wired once the sidebar
@@ -3345,10 +3302,15 @@ document.addEventListener('DOMContentLoaded',()=>{
     }
     if (id === 'admin') {
       loadPlatformStats();
+      setTimeout(loadAdminCityChart, 200);
+      loadOverviewModerationPreview();
     }
     if (id === 'buyer') {
       loadBuyerWishlistCount();
       loadWishlistGrid();
+      const heading = document.getElementById('buyerWelcomeHeading');
+      const user = getUser();
+      if (heading) heading.textContent = user ? `Welcome back, ${user.firstName}! 👋` : 'Welcome! 👋';
     }
     if (id === 'agents') {
       loadAgentsDirectory();
@@ -3519,30 +3481,27 @@ function buildPreferencesPanel() {
         <div class="form-group"><label class="form-label">Preferred Cities</label>
           <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:6px">
             <span class="tag tag-blue" style="cursor:pointer">Bangalore ✕</span>
-            <span class="tag tag-blue" style="cursor:pointer">Mumbai ✕</span>
             <span class="tag" style="background:var(--border);cursor:pointer">+ Add City</span>
           </div></div>
         <div class="form-group"><label class="form-label">Property Type</label>
           <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:6px">
-            <span class="tag tag-blue" style="cursor:pointer">Apartment ✕</span>
-            <span class="tag tag-blue" style="cursor:pointer">Villa ✕</span>
             <span class="tag" style="background:var(--border);cursor:pointer">+ Add Type</span>
           </div></div>
         <div class="form-group"><label class="form-label">Budget Range</label>
           <div style="display:flex;gap:8px"><input type="number" placeholder="Min ₹" style="width:50%"><input type="number" placeholder="Max ₹" style="width:50%"></div></div>
         <div class="form-group"><label class="form-label">BHK</label>
           <select><option>2 BHK</option><option>3 BHK</option><option>4 BHK</option></select></div>
-        <button class="btn btn-primary" onclick="showToast('Preferences saved','⚙️')">Save Preferences</button>
+        <button class="btn btn-primary" onclick="showToast('Preferences aren\'t connected to a backend yet','⚙️')">Save Preferences</button>
       </div>
       <div class="chart-card">
-        <h3 style="margin-bottom:1.2rem">🔔 Notification Settings</h3>
-        <div class="setting-row"><div class="setting-label">New matching listings</div><div class="toggle on" onclick="this.classList.toggle('on')"></div></div>
-        <div class="setting-row"><div class="setting-label">Price drops</div><div class="toggle on" onclick="this.classList.toggle('on')"></div></div>
-        <div class="setting-row"><div class="setting-label">Agent replies</div><div class="toggle on" onclick="this.classList.toggle('on')"></div></div>
-        <div class="setting-row"><div class="setting-label">Site visit reminders</div><div class="toggle on" onclick="this.classList.toggle('on')"></div></div>
+        <h3 style="margin-bottom:1.2rem">🔔 Notification Settings <span class="tag" style="background:rgba(255,255,255,0.08);color:var(--muted);font-size:0.7rem;margin-left:6px">Not connected</span></h3>
+        <div class="setting-row"><div class="setting-label">New matching listings</div><div class="toggle" onclick="this.classList.toggle('on')"></div></div>
+        <div class="setting-row"><div class="setting-label">Price drops</div><div class="toggle" onclick="this.classList.toggle('on')"></div></div>
+        <div class="setting-row"><div class="setting-label">Agent replies</div><div class="toggle" onclick="this.classList.toggle('on')"></div></div>
+        <div class="setting-row"><div class="setting-label">Site visit reminders</div><div class="toggle" onclick="this.classList.toggle('on')"></div></div>
         <div class="setting-row"><div class="setting-label">WhatsApp alerts</div><div class="toggle" onclick="this.classList.toggle('on')"></div></div>
-        <div class="setting-row"><div class="setting-label">Email digest (weekly)</div><div class="toggle on" onclick="this.classList.toggle('on')"></div></div>
-        <button class="btn btn-primary" style="margin-top:1rem" onclick="showToast('Notifications updated','🔔')">Save Settings</button>
+        <div class="setting-row"><div class="setting-label">Email digest (weekly)</div><div class="toggle" onclick="this.classList.toggle('on')"></div></div>
+        <button class="btn btn-primary" style="margin-top:1rem" onclick="showToast('Notification settings aren\'t connected to a backend yet','🔔')">Save Settings</button>
       </div>
     </div>`;
 }
@@ -3653,10 +3612,10 @@ function buildAgentAnalyticsPanel() {
       <div class="stat-card"><div class="stat-icon stat-icon-purple">⭐</div><div class="value">—</div><div class="label">Avg Rating</div><div class="change" style="color:var(--muted)">Demo data — not tracked yet</div></div>
     </div>
     <div class="grid-2">
-      <div class="chart-card"><h3>Inquiries vs Closures <span class="tag" style="background:rgba(255,255,255,0.08);color:var(--muted);font-size:0.7rem;margin-left:6px">Demo data</span></h3><canvas id="agentAnalyticsChart" height="180"></canvas></div>
+      <div class="chart-card"><h3>Inquiries vs Closures <span class="tag" style="background:rgba(255,255,255,0.08);color:var(--muted);font-size:0.7rem;margin-left:6px">Demo data</span></h3><div style="padding:2.5rem 1rem;text-align:center;color:var(--muted);font-size:0.85rem">This chart isn't connected to a backend yet</div></div>
       <div class="chart-card"><h3>Top Performing Listings</h3>
         <div id="agentTopListings" style="margin-top:1rem;display:flex;flex-direction:column;gap:10px">
-          <div style="text-align:center;padding:1rem;color:var(--muted);font-size:.85rem">Loading your listings…</div>
+          <div style="text-align:center;padding:1rem;color:var(--muted);font-size:.85rem">Per-listing performance metrics aren't connected to a backend yet</div>
         </div>
       </div>
     </div>`;
@@ -3735,8 +3694,8 @@ function buildBuilderAnalyticsPanel() {
       <div class="stat-card"><div class="stat-icon stat-icon-purple">💰</div><div class="value">—</div><div class="label">Pipeline Value</div><div class="change" style="color:var(--muted)">Demo data — not tracked yet</div></div>
     </div>
     <div class="grid-2">
-      <div class="chart-card"><h3>Views by Project <span class="tag" style="background:rgba(255,255,255,0.08);color:var(--muted);font-size:0.7rem;margin-left:6px">Demo data</span></h3><canvas id="builderViewsChart" height="180"></canvas></div>
-      <div class="chart-card"><h3>Lead Sources <span class="tag" style="background:rgba(255,255,255,0.08);color:var(--muted);font-size:0.7rem;margin-left:6px">Demo data</span></h3><canvas id="builderSourceChart" height="180"></canvas></div>
+      <div class="chart-card"><h3>Views by Project <span class="tag" style="background:rgba(255,255,255,0.08);color:var(--muted);font-size:0.7rem;margin-left:6px">Demo data</span></h3><div style="padding:2.5rem 1rem;text-align:center;color:var(--muted);font-size:0.85rem">This chart isn't connected to a backend yet</div></div>
+      <div class="chart-card"><h3>Lead Sources <span class="tag" style="background:rgba(255,255,255,0.08);color:var(--muted);font-size:0.7rem;margin-left:6px">Demo data</span></h3><div style="padding:2.5rem 1rem;text-align:center;color:var(--muted);font-size:0.85rem">This chart isn't connected to a backend yet</div></div>
     </div>`;
 }
 
@@ -3748,7 +3707,7 @@ function buildBuilderRevenuePanel() {
       <div class="stat-card"><div class="stat-icon stat-icon-blue">✅</div><div class="value">—</div><div class="label">Collected</div><div class="change" style="color:var(--muted)">Demo data — not tracked yet</div></div>
       <div class="stat-card"><div class="stat-icon stat-icon-amber">⏳</div><div class="value">—</div><div class="label">Pending</div><div class="change" style="color:var(--muted)">Demo data — not tracked yet</div></div>
     </div>
-    <div class="chart-card" style="margin-bottom:2rem"><h3>Monthly Collections <span class="tag" style="background:rgba(255,255,255,0.08);color:var(--muted);font-size:0.7rem;margin-left:6px">Demo data</span></h3><canvas id="builderCollectionChart" height="120"></canvas></div>
+    <div class="chart-card" style="margin-bottom:2rem"><h3>Monthly Collections <span class="tag" style="background:rgba(255,255,255,0.08);color:var(--muted);font-size:0.7rem;margin-left:6px">Demo data</span></h3><div style="padding:2.5rem 1rem;text-align:center;color:var(--muted);font-size:0.85rem">This chart isn't connected to a backend yet</div></div>
     <div class="table-card">
       <div class="table-head"><h3>Recent Transactions</h3></div>
       <table><thead><tr><th>Buyer</th><th>Project</th><th>Unit</th><th>Amount</th><th>Date</th><th>Type</th><th>Status</th></tr></thead>
@@ -3901,7 +3860,7 @@ function buildRentalAnalyticsPanel() {
       <div class="stat-card"><div class="stat-icon stat-icon-purple">💰</div><div class="value">—</div><div class="label">Annual Net Income</div><div class="change" style="color:var(--muted)">Demo data — not tracked yet</div></div>
     </div>
     <div class="grid-2">
-      <div class="chart-card"><h3>Monthly Net Income <span class="tag" style="background:rgba(255,255,255,0.08);color:var(--muted);font-size:0.7rem;margin-left:6px">Demo data</span></h3><canvas id="rentalNetChart" height="180"></canvas></div>
+      <div class="chart-card"><h3>Monthly Net Income <span class="tag" style="background:rgba(255,255,255,0.08);color:var(--muted);font-size:0.7rem;margin-left:6px">Demo data</span></h3><div style="padding:2.5rem 1rem;text-align:center;color:var(--muted);font-size:0.85rem">This chart isn't connected to a backend yet</div></div>
       <div class="chart-card"><h3>Yield by Property</h3>
         <div style="margin-top:1rem;text-align:center;padding:1rem;color:var(--muted);font-size:.85rem">No properties tracked yet</div>
       </div>
